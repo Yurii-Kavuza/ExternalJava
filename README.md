@@ -1,1 +1,3 @@
-#We start External Java
+# We start External Java
+
+There is only one project with droids.
