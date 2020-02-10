@@ -8,7 +8,7 @@ public abstract class Droid {
     private int health;
     private int energy;
     private int damage;
-    private int attemptOfPower;
+
     private boolean alive = true;
     private String resultAfterFight;
 
@@ -101,7 +101,7 @@ public abstract class Droid {
         boolean haveHealth=true;
 
         if (this.getDamage()>=droid.getEnergy()){
-            delta=(this.getDamage()-droid.getEnergy())*2;
+            delta=(this.getDamage()-droid.getEnergy())*2+1;
         }else {
             delta=(droid.getEnergy()-this.getDamage())/2;
         }

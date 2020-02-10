@@ -20,10 +20,11 @@ public class HouseworkerDroid extends Droid {
 
     public HouseworkerDroid(int health, int energy, int damage, String name) {
         super(health, energy, damage, name);
+        this.responsibility="undefined";
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", responsibility is" + responsibility;
+        return super.toString() + ", responsibility is " + responsibility;
     }
 }

@@ -19,7 +19,6 @@ public class DroidController {
     public void startTournament() {
         view.printMessage(DroidView.GREETING);
         view.printMessage(DroidView.QUANTITY_OF_COMPETITORS + droids.size());
-        view.printMessage(DroidView.QUANTITY_OF_COMPETITORS + droids.size());
         while(droids.size()>1){
             int firstCompetitor=(int)(Math.random()*droids.size());
             droid1=droids.get(firstCompetitor);
@@ -39,6 +38,10 @@ public class DroidController {
                 view.printMessage(droid1.getResultAfterFight() + DroidView.NO_WINNER);
                 droids.add(droid1);
                 droids.add(droid2);
+            }
+
+            if(droids.size()>1){
+                view.printMessage(DroidView.QUANTITY_OF_COMPETITORS + droids.size());
             }
         }
         view.printMessage(DroidView.WINNER_OF_TOURNAMENT + droids.get(0));

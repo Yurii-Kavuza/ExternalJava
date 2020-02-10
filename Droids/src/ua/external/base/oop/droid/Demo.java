@@ -17,6 +17,7 @@ public class Demo {
         Droid third = new AthleteDroid(35,30,35, "Chuck", 1.2);
         Droid fourth = new AthleteDroid(35,30,35, "Nick");
         Droid fifth = new AthleteDroid(45,20,35, "Ben", 0.8);
+        Droid seventh = new AthleteDroid(50,20,30, "Cristian");
         Droid sixth = new AthleteDroid(45,20,35, "Tobias");
 
         list.add(first);
@@ -26,6 +27,7 @@ public class Demo {
         list.add(fifth);
         list.add(sixth);
         list.add(sixth);
+        list.add(seventh);
 
         DroidController controller = new DroidController(list,view);
         controller.startTournament();
