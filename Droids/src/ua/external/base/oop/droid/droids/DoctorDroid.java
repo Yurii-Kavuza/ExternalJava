@@ -1,4 +1,6 @@
-public class DoctorDroid extends Droid 
+package ua.external.base.oop.droid.droids;
+
+public class DoctorDroid extends Droid
 {
 	private int criticalLevelOfHealth = 10;
 

@@ -1,3 +1,5 @@
+package ua.external.base.oop.droid.droids;
+
 public class KillerDroid extends Droid
 {
 	// extra damage to kill another droid
