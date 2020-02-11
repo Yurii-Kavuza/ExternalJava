@@ -4,18 +4,12 @@ public class DoctorDroid extends Droid implements Repairable{
 
 	private int criticalLevelOfHealth = 10;
 
-
 	public DoctorDroid(int health, int energy, int damage, String name)
 	{
 		super(health, energy, damage, name);
 	}
 
-
-
-
-
 	// This function checks if a droid is healthy or not
-
 	public void medicalExamination(Droid patient)
 	{
 		// if value of var health of droid patient is lower than critical level
