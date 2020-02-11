@@ -32,12 +32,12 @@ public class DoctorDroid extends Droid
 	}
 
 
-	public void getCriticalLevelOfHealth()
+	public int getCriticalLevelOfHealth()
 	{
 		return criticalLevelOfHealth;
 	}
 
-	public int setCriticalLevelOfHealth(int criticalLevelOfHealth)
+	public void setCriticalLevelOfHealth(int criticalLevelOfHealth)
 	{
 		this.criticalLevelOfHealth = criticalLevelOfHealth;
 	}
