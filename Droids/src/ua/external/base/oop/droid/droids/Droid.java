@@ -21,6 +21,7 @@ public abstract class Droid {
         this.energy = droid.getEnergy();
         this.damage = droid.getDamage();
         this.alive = true;
+        droid=null;
     }
 
     public Droid(int health, int energy, int damage, String name) {

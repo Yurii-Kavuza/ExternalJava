@@ -2,6 +2,7 @@ package ua.external.base.oop.droid;
 
 import ua.external.base.oop.droid.controllers.DroidController;
 import ua.external.base.oop.droid.droids.AthleteDroid;
+import ua.external.base.oop.droid.droids.DoctorDroid;
 import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.droids.HouseworkerDroid;
 import ua.external.base.oop.droid.views.DroidView;
@@ -19,6 +20,7 @@ public class Demo {
         Droid fifth = new AthleteDroid(45,20,35, "Ben", 0.8);
         Droid seventh = new AthleteDroid(50,20,30, "Cristian");
         Droid sixth = new AthleteDroid(45,20,35, "Tobias");
+        Droid eighth = new DoctorDroid(first);
 
         list.add(first);
         list.add(second);
@@ -28,6 +30,7 @@ public class Demo {
         list.add(sixth);
         list.add(sixth);
         list.add(seventh);
+        list.add(eighth);
 
         DroidController controller = new DroidController(list,view);
         controller.startTournament();

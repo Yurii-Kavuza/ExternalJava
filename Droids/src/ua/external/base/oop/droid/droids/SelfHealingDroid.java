@@ -1,6 +1,6 @@
 package ua.external.base.oop.droid.droids;
 
-public class SelfHealingDroid extends Droid {
+public class SelfHealingDroid extends Droid implements Repairable{
     private double recoveryRatio;
 
     public SelfHealingDroid(int health, int energy, int damage, String name, double recoveryRatio) {

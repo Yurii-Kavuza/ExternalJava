@@ -1,6 +1,6 @@
 package ua.external.base.oop.droid.droids;
 
-public class AthleteDroid extends Droid {
+public class AthleteDroid extends Droid implements Repairable{
     private double multiplyPower;
 
     public AthleteDroid(int health, int energy, int damage, String name, double multiplyPower) {
