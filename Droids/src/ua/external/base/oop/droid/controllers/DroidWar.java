@@ -5,13 +5,13 @@ import ua.external.base.oop.droid.views.DroidView;
 
 import java.util.ArrayList;
 
-public class DroidController {
+public class DroidWar {
     private ArrayList<Droid> droids;
     private Droid droid1;
     private Droid droid2;
     private DroidView view;
 
-    public DroidController(ArrayList<Droid> droids, DroidView view) {
+    public DroidWar(ArrayList<Droid> droids, DroidView view) {
         this.droids = droids;
         this.view = view;
     }
