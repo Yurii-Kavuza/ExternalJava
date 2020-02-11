@@ -12,6 +12,17 @@ public abstract class Droid {
     private boolean alive = true;
     private String resultAfterFight;
 
+    public Droid() {
+    }
+
+    public Droid(Droid droid) {
+        this.name = droid.getName();
+        this.health = droid.getHealth();
+        this.energy = droid.getEnergy();
+        this.damage = droid.getDamage();
+        this.alive = true;
+    }
+
     public Droid(int health, int energy, int damage, String name) {
         if((health + energy + damage)>MAX_VALUE || ((health + energy + damage)<1 && health<1)) {
             this.setHealth(0);
