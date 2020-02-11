@@ -10,18 +10,13 @@ public class KillerDroid extends Droid
 		super(health, energy, damage, name);
 	}
 
-	public KillerDroid(Droid victimDroid)
+	public void killEnemy(Droid enemy)
 	{
-		kill(victimDroid);
-	}
-
-	public void kill(Droid victim)
-	{
-		extraDamage += victim.getHealth();
+		extraDamage += enemy.getHealth();
 		this.setDamage(this.getDamage() + extraDamage);
 
-		victim.setHealth(0);
-		this.setDamage(this.getDamage() - victim.getHealth());
+		enemy.setHealth(0);
+		this.setDamage(this.getDamage() - enemy.getHealth());
 	}
 
 	public int getExtraDamage()
