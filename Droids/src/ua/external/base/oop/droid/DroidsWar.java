@@ -8,7 +8,7 @@ import ua.external.base.oop.droid.views.DroidView;
 
 import java.util.ArrayList;
 
-public class Demo {
+public class DroidsWar {
     public static void main(String[] args) {
         DroidView view = new DroidView();
         ArrayList<Droid> list = new ArrayList<>();
