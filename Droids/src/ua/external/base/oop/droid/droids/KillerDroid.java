@@ -1,20 +1,20 @@
 public class KillerDroid extends Droid
 {
-	int powerDamage = 10;
+	int extraDamage;
 
 	public KillerDroid(int health, int energy, int damage, String name)
 	{
-		damage += powerDamage;
+		damage += extraDamage;
 		super(health, energy, damage, name);
 	}
 
-	public int getPowerDamage()
+	public int getExtraDamage()
 	{
-		return powerDamage;
+		return extraDamage;
 	}
 
-	public void setPowerDamage(int powerDamage)
+	public void setExtraDamage(int extraDamage)
 	{
-		this.powerDamage = powerDamage;
+		this.extraDamage = extraDamage;
 	}
 }
