@@ -16,7 +16,6 @@ public class SelfHealingDroid extends Droid {
         this.recoveryRatio = recoveryRatio;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", recoveryRatio=" + recoveryRatio;
     }
