@@ -1,8 +1,7 @@
 package ua.external.base.oop.droid;
 
-import ua.external.base.oop.droid.controllers.DroidWar;
+import ua.external.base.oop.droid.controllers.DroidController;
 import ua.external.base.oop.droid.droids.AthleteDroid;
-import ua.external.base.oop.droid.droids.DoctorDroid;
 import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.droids.HouseworkerDroid;
 import ua.external.base.oop.droid.views.DroidView;
@@ -30,7 +29,7 @@ public class Demo {
         list.add(sixth);
         list.add(seventh);
 
-        DroidWar controller = new DroidWar(list,view);
+        DroidController controller = new DroidController(list,view);
         controller.startTournament();
     }
 }
