@@ -1,7 +1,7 @@
 package ua.external.base.oop.droid.droids;
 
-public class DoctorDroid extends Droid implements Repairable
-{
+public class DoctorDroid extends Droid implements Repairable{
+
 	private int criticalLevelOfHealth = 10;
 
 
@@ -10,21 +10,24 @@ public class DoctorDroid extends Droid implements Repairable
 		super(health, energy, damage, name);
 	}
 
-	public DoctorDroid(Droid patient)
-	{
-		super(patient);
-		medicalExamination(patient);
-	}
 
+
+
+
+	// This function checks if a droid is healthy or not
 
 	public void medicalExamination(Droid patient)
 	{
+		// if value of var health of droid patient is lower than critical level
 		if(patient.getHealth() <= criticalLevelOfHealth)
 		{
+			// we treat the patient
 			treatPatient(patient);
 		}
 		else
 		{
+			// if value of var health of droid patient is higher than critical level
+			// we print that our droid is healthy
 			System.out.println("You are healthy! :)");
 		}
 	}
