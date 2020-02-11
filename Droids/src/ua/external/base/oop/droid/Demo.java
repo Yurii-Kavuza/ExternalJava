@@ -20,7 +20,7 @@ public class Demo {
         Droid fifth = new AthleteDroid(45,20,35, "Ben", 0.8);
         Droid seventh = new AthleteDroid(50,20,30, "Cristian");
         Droid sixth = new AthleteDroid(45,20,35, "Tobias");
-        
+
         list.add(first);
         list.add(second);
         list.add(third);
