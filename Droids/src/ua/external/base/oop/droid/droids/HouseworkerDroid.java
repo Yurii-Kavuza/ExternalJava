@@ -1,5 +1,9 @@
 package ua.external.base.oop.droid.droids;
 
+import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
+import ua.external.base.oop.droid.droids.behavior.NoDamage;
+import ua.external.base.oop.droid.droids.behavior.NoEnergy;
+
 import java.util.ArrayList;
 
 public class HouseworkerDroid extends Droid {
@@ -14,13 +18,17 @@ public class HouseworkerDroid extends Droid {
     }
 
     public HouseworkerDroid(int health, int energy, int damage, String name, String responsibility) {
-        super(health, energy, damage, name);
+        damageBehavior = new NoDamage();
+        energyBehavior = new NoEnergy();
+        this.setHealth(health);
+        this.setName(name);
+        this.damageBehavior.setDamage(damage);
+        this.energyBehavior.setEnergy(energy);
         this.responsibility = responsibility;
     }
 
     public HouseworkerDroid(int health, int energy, int damage, String name) {
-        super(health, energy, damage, name);
-        this.responsibility="undefined";
+        this(health, energy, damage, name, "undefined");
     }
 
     @Override

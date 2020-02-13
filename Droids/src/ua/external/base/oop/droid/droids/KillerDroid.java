@@ -13,10 +13,10 @@ public class KillerDroid extends Droid
 	public void killEnemy(Droid enemy)
 	{
 		extraDamage += enemy.getHealth();
-		this.setDamage(this.getDamage() + extraDamage);
+		this.damageBehavior.setDamage(this.damageBehavior.getDamage() + extraDamage);
 
 		enemy.setHealth(0);
-		this.setDamage(this.getDamage() - enemy.getHealth());
+		this.damageBehavior.setDamage(this.damageBehavior.getDamage() - enemy.getHealth());
 	}
 
 	public int getExtraDamage()

@@ -2,13 +2,14 @@ package ua.external.base.oop.droid.droids;
 
 import org.jetbrains.annotations.NotNull;
 import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
+import ua.external.base.oop.droid.droids.behavior.EnergyBehavior;
 
 public abstract class Droid {
     private int MAX_VALUE=100;
     private String name;
     private int health;
-    private int energy;
     DamageBehavior damageBehavior;
+    EnergyBehavior energyBehavior;
 
     private boolean alive = true;
     private String resultAfterFight;
@@ -19,7 +20,7 @@ public abstract class Droid {
     public Droid(Droid droid) {
         this.name = droid.getName();
         this.health = droid.getHealth();
-        this.energy = droid.getEnergy();
+        this.energyBehavior = droid.energyBehavior;
         this.damageBehavior = droid.damageBehavior;
         this.alive = true;
         droid=null;
@@ -28,7 +29,7 @@ public abstract class Droid {
     public Droid(int health, int energy, int damage, String name) {
         if((health + energy + damage)>MAX_VALUE || ((health + energy + damage)<1 && health<1)) {
             this.setHealth(0);
-            this.setEnergy(0);
+            this.energyBehavior.setEnergy(0);
             this.damageBehavior.setDamage(damage);
             this.alive =false;
             this.name="Broken droid";
@@ -36,25 +37,25 @@ public abstract class Droid {
                     ". You have created broken droid and it can not fight because it is not alive.");
         }else if(energy<1 && damage<1){
             this.health = health;
-            this.energy = energy;
+            this.energyBehavior.setEnergy(energy);
             this.damageBehavior.setDamage(damage);
             this.name=name;
             System.out.println("Pay attention! You have created droid that can not fight and protect itself.");
         }else if(energy<1){
             this.health = health;
-            this.energy = energy;
+            this.energyBehavior.setEnergy(energy);
             this.damageBehavior.setDamage(damage);
             this.name=name;
             System.out.println("Pay attention! You have created droid that can not protect itself.");
         }else if(damage<1){
             this.health = health;
-            this.energy = energy;
+            this.energyBehavior.setEnergy(energy);
             this.damageBehavior.setDamage(damage);
             this.name=name;
             System.out.println("Pay attention! You have created droid that can not fight.");
         }else{
             this.health = health;
-            this.energy = energy;
+            this.energyBehavior.setEnergy(energy);
             this.damageBehavior.setDamage(damage);
             this.name=name;
         }
@@ -80,14 +81,37 @@ public abstract class Droid {
         this.health = health;
     }
 
-    public int getEnergy() {
-        return energy;
+//    public int getEnergy() {
+//        return energy;
+//    }
+//
+//    public void setEnergy(int energy) {
+//        this.energy = energy;
+//    }
+
+    public int performEnergy(){
+        return energyBehavior.getEnergy();
     }
 
-    public void setEnergy(int energy) {
-        this.energy = energy;
+    public void modifyEnergy(int value){
+        energyBehavior.setEnergy(value);
     }
 
+    public void modifyEnergy(){
+        energyBehavior.setEnergy();
+    }
+
+    public int performDamage(){
+        return damageBehavior.getDamage();
+    }
+
+    public void modifyDamage(int value){
+        damageBehavior.setDamage(value);
+    }
+
+    public void modifyDamage(){
+        damageBehavior.setDamage();
+    }
 //    public int getDamage() {
 //        return damage;
 //    }
@@ -117,10 +141,10 @@ public abstract class Droid {
         int delta;
         boolean haveHealth=true;
 
-        if (this.damageBehavior.getDamage()>=droid.getEnergy()){
-            delta=(this.damageBehavior.getDamage()-droid.getEnergy())*2+1;
+        if (this.damageBehavior.getDamage()>=droid.energyBehavior.getEnergy()){
+            delta=(this.damageBehavior.getDamage()-droid.energyBehavior.getEnergy())*2+1;
         }else {
-            delta=(droid.getEnergy()-this.damageBehavior.getDamage())/2;
+            delta=(droid.energyBehavior.getEnergy()-this.damageBehavior.getDamage())/2;
         }
         while(haveHealth){
             droid.setHealth(droid.getHealth()-delta);
@@ -167,7 +191,7 @@ public abstract class Droid {
         return "" + this.getClass().getSimpleName() +
                 " name is " + name +
                 ", health=" + health +
-                ", energy=" + energy +
+                ", energy=" + energyBehavior.getEnergy() +
                 ", damage=" + damageBehavior.getDamage();
     }
 }

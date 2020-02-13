@@ -1,6 +1,8 @@
 package ua.external.base.oop.droid.droids;
 
-public class DoctorDroid extends Droid implements Repairable{
+import ua.external.base.oop.droid.droids.behavior.Repairable;
+
+public class DoctorDroid extends Droid implements Repairable {
 
 	private int criticalLevelOfHealth = 10;
 

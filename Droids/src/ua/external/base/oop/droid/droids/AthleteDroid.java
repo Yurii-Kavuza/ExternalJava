@@ -1,22 +1,28 @@
 package ua.external.base.oop.droid.droids;
 
-public class AthleteDroid extends Droid implements Repairable{
+import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
+import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
+import ua.external.base.oop.droid.droids.behavior.Repairable;
+
+public class AthleteDroid extends Droid{
     private double multiplyPower;
 
     public AthleteDroid(int health, int energy, int damage, String name, double multiplyPower) {
-        super(health, energy, damage, name);
+        damageBehavior = new DamageWithoutWeapon(damage);
+        energyBehavior = new EnergyUsual(energy);
+        this.setHealth(health);
+        this.setName(name);
         if(multiplyPower>1){
-            this.setDamage((int)(this.getDamage()*multiplyPower));
+            this.damageBehavior.setDamage((int)(this.damageBehavior.getDamage()*multiplyPower));
             this.multiplyPower=multiplyPower;
         }else {
-            this.setDamage((int)(this.getDamage()*1));
+            this.damageBehavior.setDamage((int)(this.damageBehavior.getDamage()*1));
             this.multiplyPower=multiplyPower;
         }
     }
 
     public AthleteDroid(int health, int energy, int damage, String name) {
-        super(health, energy, damage, name);
-        this.multiplyPower=1.0;
+        this(health, energy, damage, name, 1.0);
     }
 
     public double getMultiplyPower() {
