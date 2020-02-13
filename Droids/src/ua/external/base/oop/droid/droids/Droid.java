@@ -1,7 +1,5 @@
 package ua.external.base.oop.droid.droids;
 
-import org.jetbrains.annotations.NotNull;
-
 public abstract class Droid {
     private int MAX_VALUE=100;
     private String name;
@@ -107,7 +105,7 @@ public abstract class Droid {
         this.resultAfterFight = resultAfterFight;
     }
 
-    public int attempts (@NotNull Droid droid){
+    public int attempts (Droid droid){
         int attempt=0;
         int delta;
         boolean haveHealth=true;
@@ -129,7 +127,7 @@ public abstract class Droid {
         return attempt;
     }
 
-    public void fight(@NotNull Droid droid){
+    public void fight(Droid droid){
         int healthDroidFirstBefore=this.getHealth();
         int healthDroidSecondBefore=droid.getHealth();
 
