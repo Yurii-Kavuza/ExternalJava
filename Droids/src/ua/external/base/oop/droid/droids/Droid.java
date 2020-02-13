@@ -20,7 +20,7 @@ public abstract class Droid {
         this.name = droid.getName();
         this.health = droid.getHealth();
         this.energy = droid.getEnergy();
-        this.damageBehavior = droid.getDamage();
+        this.damageBehavior = droid.damageBehavior;
         this.alive = true;
         droid=null;
     }
@@ -29,7 +29,7 @@ public abstract class Droid {
         if((health + energy + damage)>MAX_VALUE || ((health + energy + damage)<1 && health<1)) {
             this.setHealth(0);
             this.setEnergy(0);
-            this.setDamage(0);
+            this.damageBehavior.setDamage(damage);
             this.alive =false;
             this.name="Broken droid";
             System.out.println("Pay attention! Sum of health's, energy's and damage's points must be " + MAX_VALUE +
@@ -37,25 +37,25 @@ public abstract class Droid {
         }else if(energy<1 && damage<1){
             this.health = health;
             this.energy = energy;
-            this.damage = damage;
+            this.damageBehavior.setDamage(damage);
             this.name=name;
             System.out.println("Pay attention! You have created droid that can not fight and protect itself.");
         }else if(energy<1){
             this.health = health;
             this.energy = energy;
-            this.damage = damage;
+            this.damageBehavior.setDamage(damage);
             this.name=name;
             System.out.println("Pay attention! You have created droid that can not protect itself.");
         }else if(damage<1){
             this.health = health;
             this.energy = energy;
-            this.damage = damage;
+            this.damageBehavior.setDamage(damage);
             this.name=name;
             System.out.println("Pay attention! You have created droid that can not fight.");
         }else{
             this.health = health;
             this.energy = energy;
-            this.damage = damage;
+            this.damageBehavior.setDamage(damage);
             this.name=name;
         }
     }
@@ -117,10 +117,10 @@ public abstract class Droid {
         int delta;
         boolean haveHealth=true;
 
-        if (this.getDamage()>=droid.getEnergy()){
-            delta=(this.getDamage()-droid.getEnergy())*2+1;
+        if (this.damageBehavior.getDamage()>=droid.getEnergy()){
+            delta=(this.damageBehavior.getDamage()-droid.getEnergy())*2+1;
         }else {
-            delta=(droid.getEnergy()-this.getDamage())/2;
+            delta=(droid.getEnergy()-this.damageBehavior.getDamage())/2;
         }
         while(haveHealth){
             droid.setHealth(droid.getHealth()-delta);
@@ -168,6 +168,6 @@ public abstract class Droid {
                 " name is " + name +
                 ", health=" + health +
                 ", energy=" + energy +
-                ", damage=" + damage;
+                ", damage=" + damageBehavior.getDamage();
     }
 }
