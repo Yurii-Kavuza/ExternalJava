@@ -1,13 +1,14 @@
 package ua.external.base.oop.droid.droids;
 
 import org.jetbrains.annotations.NotNull;
+import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
 
 public abstract class Droid {
     private int MAX_VALUE=100;
     private String name;
     private int health;
     private int energy;
-    private int damage;
+    DamageBehavior damageBehavior;
 
     private boolean alive = true;
     private String resultAfterFight;
@@ -19,7 +20,7 @@ public abstract class Droid {
         this.name = droid.getName();
         this.health = droid.getHealth();
         this.energy = droid.getEnergy();
-        this.damage = droid.getDamage();
+        this.damageBehavior = droid.getDamage();
         this.alive = true;
         droid=null;
     }
@@ -59,6 +60,10 @@ public abstract class Droid {
         }
     }
 
+    public void setDamageBehavior(DamageBehavior damageBehavior) {
+        this.damageBehavior = damageBehavior;
+    }
+
     public String getName() {
         return name;
     }
@@ -83,13 +88,13 @@ public abstract class Droid {
         this.energy = energy;
     }
 
-    public int getDamage() {
-        return damage;
-    }
-
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
+//    public int getDamage() {
+//        return damage;
+//    }
+//
+//    public void setDamage(int damage) {
+//        this.damage = damage;
+//    }
 
     public boolean getAlive() {
         return alive;
