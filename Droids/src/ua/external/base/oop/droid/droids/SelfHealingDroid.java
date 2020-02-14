@@ -8,6 +8,12 @@ public class SelfHealingDroid extends Droid implements Repairable{
         this.recoveryRatio = recoveryRatio;
     }
 
+    public SelfHealingDroid(int health, int energy, int damage, String name)
+    {
+        super(health, energy, damage, name);
+        this.recoveryRatio = 1;
+    }
+
     public double getRecoveryRatio() {
         return recoveryRatio;
     }
