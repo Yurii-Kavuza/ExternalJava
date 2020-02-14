@@ -1,12 +1,8 @@
 package ua.external.base.oop.droid.droids;
 
-<<<<<<< HEAD
-import org.jetbrains.annotations.NotNull;
 import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
 import ua.external.base.oop.droid.droids.behavior.EnergyBehavior;
 
-=======
->>>>>>> 5595a2c6c06379c5193f674746f674088799e440
 public abstract class Droid {
     private int MAX_VALUE=100;
     private String name;
