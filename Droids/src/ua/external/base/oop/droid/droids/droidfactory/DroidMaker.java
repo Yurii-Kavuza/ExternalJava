@@ -14,7 +14,7 @@ public class DroidMaker
             case "DoctorDroid": return new DoctorDroidFactory();
             case "DoublePowerDroid": return new DoublePowerDroidFactory();
             case "FlightDroid": return new FlightDroidFactory();
-            case "HouseworkerDroidFactory": return new HouseworkerDroidFactory();
+            case "HouseworkerDroid": return new HouseworkerDroidFactory();
             case "KillerDroid": return new KillerDroidFactory();
             case "SelfHealingDroid": return new SelfHealingDroidFactory();
             default: return null;
