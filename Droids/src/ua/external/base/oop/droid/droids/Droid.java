@@ -81,14 +81,6 @@ public abstract class Droid {
         this.health = health;
     }
 
-//    public int getEnergy() {
-//        return energy;
-//    }
-//
-//    public void setEnergy(int energy) {
-//        this.energy = energy;
-//    }
-
     public int performEnergy(){
         return energyBehavior.getEnergy();
     }
@@ -112,13 +104,6 @@ public abstract class Droid {
     public void modifyDamage(){
         damageBehavior.setDamage();
     }
-//    public int getDamage() {
-//        return damage;
-//    }
-//
-//    public void setDamage(int damage) {
-//        this.damage = damage;
-//    }
 
     public boolean getAlive() {
         return alive;
