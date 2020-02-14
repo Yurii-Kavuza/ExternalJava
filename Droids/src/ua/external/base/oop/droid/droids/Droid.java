@@ -1,9 +1,12 @@
 package ua.external.base.oop.droid.droids;
 
+<<<<<<< HEAD
 import org.jetbrains.annotations.NotNull;
 import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
 import ua.external.base.oop.droid.droids.behavior.EnergyBehavior;
 
+=======
+>>>>>>> 5595a2c6c06379c5193f674746f674088799e440
 public abstract class Droid {
     private int MAX_VALUE=100;
     private String name;
@@ -136,7 +139,7 @@ public abstract class Droid {
         this.resultAfterFight = resultAfterFight;
     }
 
-    public int attempts (@NotNull Droid droid){
+    public int attempts (Droid droid){
         int attempt=0;
         int delta;
         boolean haveHealth=true;
@@ -158,7 +161,7 @@ public abstract class Droid {
         return attempt;
     }
 
-    public void fight(@NotNull Droid droid){
+    public void fight(Droid droid){
         int healthDroidFirstBefore=this.getHealth();
         int healthDroidSecondBefore=droid.getHealth();
 

@@ -45,7 +45,7 @@ public class DroidsWar {
 
        /* Droid first = new HouseworkerDroid(40,30,30, "Bob", "dishwasher");
         Droid second = new HouseworkerDroid(35,30,35, "Rob", "cleaner");
-        Droid third = new AthleteDroid(35,30,35, "Chuck", 1.2);
+        /*Droid third = new AthleteDroid(35,30,35, "Chuck", 1.2);
         Droid fourth = new AthleteDroid(35,30,35, "Nick");
         Droid fifth = new AthleteDroid(45,20,35, "Ben", 0.8);
         Droid seventh = new AthleteDroid(50,20,30, "Cristian");
@@ -61,6 +61,7 @@ public class DroidsWar {
         warriors.add(seventh);
 
         DroidController controller = new DroidController(warriors,view);
+
         controller.startTournament();
     }
 }
