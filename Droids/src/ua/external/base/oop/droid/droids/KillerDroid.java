@@ -1,5 +1,8 @@
 package ua.external.base.oop.droid.droids;
 
+import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
+import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
+
 public class KillerDroid extends Droid
 {
 	// extra damage to kill another droid
@@ -7,7 +10,12 @@ public class KillerDroid extends Droid
 
 	public KillerDroid(int health, int energy, int damage, String name)
 	{
-		super(health, energy, damage, name);
+		damageBehavior = new DamageWithoutWeapon();
+		energyBehavior = new EnergyUsual();
+		this.setHealth(health);
+		this.setName(name);
+		this.damageBehavior.setDamage(damage);
+		this.energyBehavior.setEnergy(energy);
 	}
 
 	public void killEnemy(Droid enemy)

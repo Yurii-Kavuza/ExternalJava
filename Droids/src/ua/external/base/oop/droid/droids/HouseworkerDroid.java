@@ -1,10 +1,9 @@
 package ua.external.base.oop.droid.droids;
 
-import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
+
 import ua.external.base.oop.droid.droids.behavior.NoDamage;
 import ua.external.base.oop.droid.droids.behavior.NoEnergy;
 
-import java.util.ArrayList;
 
 public class HouseworkerDroid extends Droid {
     private String responsibility;
@@ -25,8 +24,7 @@ public class HouseworkerDroid extends Droid {
         this.damageBehavior.setDamage(damage);
         this.energyBehavior.setEnergy(energy);
         this.responsibility = responsibility;
-    }
-
+    } 
     public HouseworkerDroid(int health, int energy, int damage, String name) {
         this(health, energy, damage, name, "undefined");
     }
