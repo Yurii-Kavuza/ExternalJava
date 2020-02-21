@@ -10,10 +10,7 @@ public class DoctorDroid extends Droid implements Repairable {
 	{
 		damageBehavior = new DamageWithoutWeapon();
 		energyBehavior = new EnergyUsual();
-		this.setHealth(health);
-		this.setName(name);
-		this.damageBehavior.setDamage(damage);
-		this.energyBehavior.setEnergy(energy);
+		setEssentialParameters(health,energy,damage,name);
 	}
 
 	// This function checks if a droid is healthy or not

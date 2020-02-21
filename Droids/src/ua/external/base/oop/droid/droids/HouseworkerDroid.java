@@ -11,10 +11,7 @@ public class HouseworkerDroid extends Droid {
     public HouseworkerDroid(int health, int energy, int damage, String name, String responsibility) {
         damageBehavior = new NoDamage();
         energyBehavior = new NoEnergy();
-        this.setHealth(health);
-        this.setName(name);
-        this.damageBehavior.setDamage(damage);
-        this.energyBehavior.setEnergy(energy);
+        setEssentialParameters(health,energy,damage,name);
         this.responsibility = responsibility;
     } 
     public HouseworkerDroid(int health, int energy, int damage, String name) {

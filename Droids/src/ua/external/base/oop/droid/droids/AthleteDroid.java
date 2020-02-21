@@ -10,8 +10,7 @@ public class AthleteDroid extends Droid{
     public AthleteDroid(int health, int energy, int damage, String name, double multiplyPower) {
         damageBehavior = new DamageWithoutWeapon(damage);
         energyBehavior = new EnergyUsual(energy);
-        this.setHealth(health);
-        this.setName(name);
+        setEssentialParameters(health,energy,damage,name);
         if(multiplyPower>1){
             this.damageBehavior.setDamage((int)(this.damageBehavior.getDamage()*multiplyPower));
             this.multiplyPower=multiplyPower;

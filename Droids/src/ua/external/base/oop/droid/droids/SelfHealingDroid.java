@@ -11,10 +11,7 @@ public class SelfHealingDroid extends Droid implements Repairable {
         this.recoveryRatio = recoveryRatio;
         damageBehavior = new DamageWithoutWeapon();
         energyBehavior = new EnergyUsual();
-        this.setHealth((int)(health * recoveryRatio));
-        this.setName(name);
-        this.damageBehavior.setDamage(damage);
-        this.energyBehavior.setEnergy(energy);
+        setEssentialParameters(health,energy,damage,name);
     }
 
     public SelfHealingDroid(int health, int energy, int damage, String name)

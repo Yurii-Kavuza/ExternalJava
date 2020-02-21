@@ -27,37 +27,29 @@ public abstract class Droid {
 
     public Droid(int health, int energy, int damage, String name) {
         if((health + energy + damage)>MAX_VALUE || ((health + energy + damage)<1 && health<1)) {
-            this.setHealth(0);
-            this.energyBehavior.setEnergy(0);
-            this.damageBehavior.setDamage(damage);
+            setEssentialParameters(0,0,damage,"Broken droid");
             this.alive =false;
-            this.name="Broken droid";
             System.out.println("Pay attention! Sum of health's, energy's and damage's points must be " + MAX_VALUE +
                     ". You have created broken droid and it can not fight because it is not alive.");
         }else if(energy<1 && damage<1){
-            this.health = health;
-            this.energyBehavior.setEnergy(energy);
-            this.damageBehavior.setDamage(damage);
-            this.name=name;
+            setEssentialParameters(health,energy,damage,name);
             System.out.println("Pay attention! You have created droid that can not fight and protect itself.");
         }else if(energy<1){
-            this.health = health;
-            this.energyBehavior.setEnergy(energy);
-            this.damageBehavior.setDamage(damage);
-            this.name=name;
+            setEssentialParameters(health,energy,damage,name);
             System.out.println("Pay attention! You have created droid that can not protect itself.");
         }else if(damage<1){
-            this.health = health;
-            this.energyBehavior.setEnergy(energy);
-            this.damageBehavior.setDamage(damage);
-            this.name=name;
+            setEssentialParameters(health,energy,damage,name);
             System.out.println("Pay attention! You have created droid that can not fight.");
         }else{
-            this.health = health;
-            this.energyBehavior.setEnergy(energy);
-            this.damageBehavior.setDamage(damage);
-            this.name=name;
+            setEssentialParameters(health,energy,damage,name);
         }
+    }
+
+    protected void setEssentialParameters(int health, int energy, int damage, String name){
+        this.health = health;
+        this.energyBehavior.setEnergy(energy);
+        this.damageBehavior.setDamage(damage);
+        this.name=name;
     }
 
     public void setDamageBehavior(DamageBehavior damageBehavior) {

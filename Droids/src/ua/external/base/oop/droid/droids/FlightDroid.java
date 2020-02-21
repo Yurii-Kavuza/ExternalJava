@@ -9,10 +9,7 @@ public class FlightDroid extends Droid
 	{
 		damageBehavior = new DamageWithoutWeapon();
 		energyBehavior = new EnergyUsual();
-		this.setHealth(health);
-		this.setName(name);
-		this.damageBehavior.setDamage(damage);
-		this.energyBehavior.setEnergy(energy);
+		setEssentialParameters(health,energy,damage,name);
 	}
 
 	public void fly()
