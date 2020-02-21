@@ -8,14 +8,6 @@ import ua.external.base.oop.droid.droids.behavior.NoEnergy;
 public class HouseworkerDroid extends Droid {
     private String responsibility;
 
-    public String getResponsibility() {
-        return responsibility;
-    }
-
-    public void setResponsibility(String responsibility) {
-        this.responsibility = responsibility;
-    }
-
     public HouseworkerDroid(int health, int energy, int damage, String name, String responsibility) {
         damageBehavior = new NoDamage();
         energyBehavior = new NoEnergy();
@@ -27,6 +19,14 @@ public class HouseworkerDroid extends Droid {
     } 
     public HouseworkerDroid(int health, int energy, int damage, String name) {
         this(health, energy, damage, name, "undefined");
+    }
+
+    public String getResponsibility() {
+        return responsibility;
+    }
+
+    public void setResponsibility(String responsibility) {
+        this.responsibility = responsibility;
     }
 
     @Override
