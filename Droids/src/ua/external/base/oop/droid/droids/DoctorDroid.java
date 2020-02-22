@@ -13,19 +13,14 @@ public class DoctorDroid extends Droid implements Repairable {
 		setEssentialParameters(health,energy,damage,name);
 	}
 
-	// This function checks if a droid is healthy or not
 	public void medicalExamination(Droid patient)
 	{
-		// if value of var health of droid patient is lower than critical level
 		if(patient.getHealth() <= criticalLevelOfHealth)
 		{
-			// we treat the patient
 			treatPatient(patient);
 		}
 		else
 		{
-			// if value of var health of droid patient is higher than critical level
-			// we print that our droid is healthy
 			System.out.println("You are healthy! :)");
 		}
 	}
@@ -34,7 +29,6 @@ public class DoctorDroid extends Droid implements Repairable {
 	{
 		setHealth(patient.getHealth() * 2);
 	}
-
 
 	public int getCriticalLevelOfHealth()
 	{
@@ -45,4 +39,7 @@ public class DoctorDroid extends Droid implements Repairable {
 	{
 		this.criticalLevelOfHealth = criticalLevelOfHealth;
 	}
+
+	@Override
+	public String toString() { return super.toString() + ", criticalLevelOfHealth = " + criticalLevelOfHealth; }
 }

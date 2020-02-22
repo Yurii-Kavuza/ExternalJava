@@ -1,6 +1,8 @@
 package ua.external.base.oop.droid.droids.behavior;
 
-public class EnergyUsual implements EnergyBehavior {
+import java.io.Serializable;
+
+public class EnergyUsual implements EnergyBehavior, Serializable {
     int energy=30;
 
     public EnergyUsual() {

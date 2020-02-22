@@ -1,13 +1,11 @@
 package ua.external.base.oop.droid;
 
 import ua.external.base.oop.droid.controllers.DroidController;
-import ua.external.base.oop.droid.droids.AthleteDroid;
-import ua.external.base.oop.droid.droids.DoctorDroid;
 import ua.external.base.oop.droid.droids.Droid;
-import ua.external.base.oop.droid.droids.HouseworkerDroid;
-import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
 import ua.external.base.oop.droid.droids.droidfactory.*;
 import ua.external.base.oop.droid.droids.droidfactory.DroidMaker;
+import ua.external.base.oop.droid.serialization.DroidsDeserialization;
+import ua.external.base.oop.droid.serialization.DroidsSerialization;
 import ua.external.base.oop.droid.views.DroidView;
 
 import java.util.ArrayList;
@@ -59,6 +57,14 @@ public class DroidsWar {
         warriors.add(sixth);
         warriors.add(sixth);
         warriors.add(seventh);
+
+        /*DroidsSerialization.writeDroidsToBinaryFile(warriors);
+        DroidsSerialization.writeDroidsToTextFile(warriors);
+        System.out.println("\n\n");
+        DroidsDeserialization.readDroidsFromBinaryFile();
+        System.out.println("\n\n");
+        DroidsDeserialization.readDroidsFromTextFile();
+        System.out.println("\n\n");*/
 
         DroidController controller = new DroidController(warriors,view);
 

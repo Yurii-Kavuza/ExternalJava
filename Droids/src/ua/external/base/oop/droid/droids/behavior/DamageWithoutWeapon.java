@@ -1,6 +1,8 @@
 package ua.external.base.oop.droid.droids.behavior;
 
-public class DamageWithoutWeapon implements DamageBehavior {
+import java.io.Serializable;
+
+public class DamageWithoutWeapon implements DamageBehavior, Serializable {
     int damage=30;
 
     public DamageWithoutWeapon() {

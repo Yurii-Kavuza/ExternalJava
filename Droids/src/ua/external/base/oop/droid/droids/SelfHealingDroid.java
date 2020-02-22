@@ -28,6 +28,6 @@ public class SelfHealingDroid extends Droid implements Repairable {
     }
 
     public String toString() {
-        return super.toString() + ", recoveryRatio=" + recoveryRatio;
+        return super.toString() + ", recoveryRatio = " + recoveryRatio;
     }
 }

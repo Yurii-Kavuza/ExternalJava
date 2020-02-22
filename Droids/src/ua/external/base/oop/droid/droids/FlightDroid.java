@@ -14,6 +14,6 @@ public class FlightDroid extends Droid
 
 	public void fly()
 	{
-		System.out.println("I can fly!");
+		System.out.println("I am flying!");
 	}
 }
