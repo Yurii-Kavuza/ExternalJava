@@ -5,7 +5,6 @@ import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 
 public class DroidView {
-    static String MESSAGES_BUNDLE_NAME = "property.messages";
     private ResourceManager resourceManager = ResourceManager.INSTANCE;
 
     /*public static final String CHOOSE_LANG = "Hi! Dear user, please, choose the language:\n1 - ua;\n2-us (default);";

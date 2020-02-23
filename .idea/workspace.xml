@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Droids/src/ua/external/base/oop/droid/droids/Droid.java" beforeDir="false" afterPath="$PROJECT_DIR$/Droids/src/ua/external/base/oop/droid/droids/Droid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Droids/src/ua/external/base/oop/droid/views/DroidView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Droids/src/ua/external/base/oop/droid/views/DroidView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,26 +73,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="357" y="72" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582224971969" />
-    <state width="1636" height="159" key="GridCell.Tab.0.bottom" timestamp="1582296224328">
+    <state width="1636" height="267" key="GridCell.Tab.0.bottom" timestamp="1582451762559">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582229428900" />
-    <state width="1636" height="159" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
-    <state width="1636" height="159" key="GridCell.Tab.0.center" timestamp="1582296224328">
+    <state width="1636" height="267" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582451762559" />
+    <state width="1636" height="267" key="GridCell.Tab.0.center" timestamp="1582451762559">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582229428899" />
-    <state width="1636" height="159" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
-    <state width="1636" height="159" key="GridCell.Tab.0.left" timestamp="1582296224328">
+    <state width="1636" height="267" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582451762559" />
+    <state width="1636" height="267" key="GridCell.Tab.0.left" timestamp="1582451762558">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582229428899" />
-    <state width="1636" height="159" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
-    <state width="1636" height="159" key="GridCell.Tab.0.right" timestamp="1582296224328">
+    <state width="1636" height="267" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582451762558" />
+    <state width="1636" height="267" key="GridCell.Tab.0.right" timestamp="1582451762559">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582229428899" />
-    <state width="1636" height="159" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
+    <state width="1636" height="267" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582451762559" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1582225029721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -101,10 +101,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582224766970" />
-    <state x="21" y="-13" width="1303" height="817" maximized="true" key="dock-window-1" timestamp="1582292123950">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1538" y="45" width="1206" height="730" key="dock-window-1" timestamp="1582451830168">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
-    <state x="21" y="-13" width="1303" height="817" maximized="true" key="dock-window-1/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582292123950" />
+    <state x="1538" y="45" width="1206" height="730" key="dock-window-1/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582451830168" />
     <state x="1912" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1582295418792">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
