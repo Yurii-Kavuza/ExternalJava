@@ -8,12 +8,20 @@ import ua.external.base.oop.droid.droids.HouseworkerDroid;
 import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
 import ua.external.base.oop.droid.droids.droidfactory.*;
 import ua.external.base.oop.droid.droids.droidfactory.DroidMaker;
+import ua.external.base.oop.droid.registration.authorization.Registration;
 import ua.external.base.oop.droid.views.DroidView;
+import ua.external.base.oop.droid.registration.authorization.Registration;
+import ua.external.base.oop.droid.registration.authorization.Authentification;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class DroidsWar {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        Authentification authent = new Authentification();
+        authent.authentification();
+        Registration reg = new Registration();
+        reg.registration();
 
         DroidView view = new DroidView();
         ArrayList<Droid> warriors = new ArrayList<>();
