@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
             Scanner scanner = new Scanner(System.in);
 
             String login;
-            System.out.println("Input login (like name@mail.com): ");
+            System.out.println("Input login for registration (like name@mail.com): ");
             login = scanner.nextLine();
             Pattern pattern = Pattern.compile("^([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$");
             Matcher matcher = pattern.matcher(login);
