@@ -20,8 +20,6 @@ public class DroidsWar {
     public static void main(String[] args) throws IOException {
         Authentification authent = new Authentification();
         authent.authentification();
-        Registration reg = new Registration();
-        reg.registration();
 
         DroidView view = new DroidView();
         ArrayList<Droid> warriors = new ArrayList<>();

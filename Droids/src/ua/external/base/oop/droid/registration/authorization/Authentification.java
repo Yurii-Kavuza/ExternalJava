@@ -20,6 +20,7 @@ import java.util.Scanner;
                 System.out.println("Input your password: ");
             } else {
                 System.out.println("Not found");
+                reg.registration();
             }
 
             String password;
@@ -28,6 +29,7 @@ import java.util.Scanner;
                 System.out.println("Welcome!");
             } else {
                 System.out.println("Not found");
+                reg.registration();
             }
             scanner.close();
         }

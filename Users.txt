@@ -1,2 +1,4 @@
 Login: annakapusta@gmail.com
 Password: qwerty1234
+Login: hello@mail.com
+Password: qazwsx1234
