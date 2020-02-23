@@ -1,7 +1,11 @@
 package ua.external.base.oop.droid.controllers;
 
-import ua.external.base.oop.droid.views.DroidView;
+
 import ua.external.base.oop.droid.droids.Droid;
+import ua.external.base.oop.droid.resource.Keys;
+import ua.external.base.oop.droid.resource.ResourceManager;
+import ua.external.base.oop.droid.views.DroidView;
+
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -21,7 +25,7 @@ public class DroidController {
     public void chooseLanguage() {
         Scanner scanner = new Scanner(System.in);
 
-        view.printMessage(DroidView.CHOOSE_LANG);
+        view.printMessage(Keys.CHOOSE_LANG);
         int numOfLang;
 
         if (scanner.hasNextInt())
@@ -32,10 +36,12 @@ public class DroidController {
                 new Locale("ua", "UA") :
                 new Locale("en", "EN");
 
-        view.setLocale(locale);
+        ResourceManager resourceManager = ResourceManager.INSTANCE;
+        resourceManager.changeResource(locale);
     }
 
     public void startTournament() {
+        chooseLanguage();
         view.printGreeting();
         view.printQuantityOfCompetitors(droids.size());
 

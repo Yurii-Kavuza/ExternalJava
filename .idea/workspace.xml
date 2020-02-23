@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +86,7 @@
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582373895546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373895546" />
     <state x="406" y="52" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582373355223">
       <screen x="0" y="0" width="1366" height="728" />
@@ -121,6 +124,7 @@
     </state>
     <state width="1322" height="172" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582374077148" />
     <state width="1636" height="159" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
+
     <state x="163" y="0" key="SettingsEditor" timestamp="1582225029721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -133,10 +137,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582224766970" />
-    <state x="21" y="-13" width="1303" height="817" maximized="true" key="dock-window-1" timestamp="1582292123950">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1538" y="45" width="1206" height="730" key="dock-window-1" timestamp="1582451830168">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
-    <state x="21" y="-13" width="1303" height="817" maximized="true" key="dock-window-1/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582292123950" />
+    <state x="1538" y="45" width="1206" height="730" key="dock-window-1/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582451830168" />
     <state x="1912" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1582295418792">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
