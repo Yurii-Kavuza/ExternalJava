@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/Connection.class" afterDir="false" />
-    </list>
+    <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
