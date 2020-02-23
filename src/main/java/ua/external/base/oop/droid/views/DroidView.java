@@ -26,6 +26,14 @@ public class DroidView {
         printMessage(resourceManager.getString(Keys.GREETING_KEY));
     }
 
+    public void printStartMenu() {
+        printMessage(resourceManager.getString(Keys.CHOOSE_ACTION) +
+                resourceManager.getString(Keys.ACTION_REGISTER)+
+                resourceManager.getString(Keys.ACTION_SIGN_IN_ADMIN_USER) +
+                resourceManager.getString(Keys.ACTION_SIGN_IN_USUAL_USER) +
+                resourceManager.getString(Keys.ACTION_EXIT));
+    }
+
     public void printQuantityOfCompetitors(int quantity) {
         printMessage(resourceManager.getString(Keys.QUANTITY_OF_COMPETITORS_KEY) + Keys.SPACE + quantity);
     }

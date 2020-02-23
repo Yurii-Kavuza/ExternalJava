@@ -4,6 +4,7 @@ package ua.external.base.oop.droid.controllers;
 import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
+import ua.external.base.oop.droid.session.Connection;
 import ua.external.base.oop.droid.views.DroidView;
 
 
@@ -16,6 +17,7 @@ public class DroidController {
     private Droid droid1;
     private Droid droid2;
     private DroidView view;
+    private Connection connection = new Connection();
 
     public DroidController(ArrayList<Droid> droids, DroidView view) {
         this.droids = droids;
@@ -24,7 +26,7 @@ public class DroidController {
 
     public void startGame(){
         chooseLanguage();
-
+        startGameMenu();
         startTournament();
     }
 
@@ -44,6 +46,38 @@ public class DroidController {
 
         ResourceManager resourceManager = ResourceManager.INSTANCE;
         resourceManager.changeResource(locale);
+    }
+
+    public void startGameMenu(){
+        Scanner scanner = new Scanner(System.in);
+        int numOfAction=0;
+
+        view.printStartMenu();
+        while (true){
+            // check int - input
+            while (!scanner.hasNextInt()) {
+                view.printStartMenu();
+                scanner.next();
+            }
+
+            // check the type of action
+            numOfAction = scanner.nextInt();
+            if (numOfAction==1) {
+                connection.register();
+                break;
+            }else if (numOfAction==2) {
+                connection.signInAsAdminUser();
+                break;
+            }else if (numOfAction==3) {
+                connection.signInAsUsualUser();
+                break;
+            }else if (numOfAction==0) {
+                System.exit(0);
+            }else {
+                view.printStartMenu();
+                continue;
+            }
+        }
     }
 
     public void startTournament() {

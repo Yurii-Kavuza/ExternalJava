@@ -2,6 +2,12 @@ package ua.external.base.oop.droid.resource;
 
 public class Keys {
     public static final String CHOOSE_LANG = "Hi! Dear user, please, choose the language:\n1 - ua;\n2-us (default);";
+    public static final String CHOOSE_ACTION ="start.menu.choose.action";
+    public static final String ACTION_REGISTER ="start.menu.action.register";
+    public static final String ACTION_SIGN_IN_ADMIN_USER ="start.menu.action.sign.in.admin.user";
+    public static final String ACTION_SIGN_IN_USUAL_USER ="start.menu.action.sign.in.usual.user";
+    public static final String ACTION_EXIT ="start.menu.action.exit";
+
     public static final String SPACE = " ";
     public static final String GREETING_KEY = "tournament.input.greeting";
     public static final String QUANTITY_OF_COMPETITORS_KEY = "tournament.input.quantity.of.competitors";
@@ -25,6 +31,7 @@ public class Keys {
     public static final String MAKING_KEY = "droid.input.making";
     public static final String ATTEMPTS_KEY = "droid.input.attempts";
     public static final String NOBODY_WON_KEY = "droid.input.nobody.won";
+
 
 
 }
