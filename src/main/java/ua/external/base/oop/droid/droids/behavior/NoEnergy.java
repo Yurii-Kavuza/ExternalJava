@@ -1,6 +1,8 @@
 package ua.external.base.oop.droid.droids.behavior;
 
-public class NoEnergy implements EnergyBehavior {
+import java.io.Serializable;
+
+public class NoEnergy implements EnergyBehavior, Serializable {
     int energy=0;
 
     @Override

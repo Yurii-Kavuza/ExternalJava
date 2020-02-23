@@ -1,6 +1,8 @@
 package ua.external.base.oop.droid.droids.behavior;
 
-public class NoDamage implements DamageBehavior {
+import java.io.Serializable;
+
+public class NoDamage implements DamageBehavior, Serializable {
     int damage=0;
 
     @Override

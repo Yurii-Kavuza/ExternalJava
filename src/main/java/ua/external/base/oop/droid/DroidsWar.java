@@ -5,6 +5,10 @@ import ua.external.base.oop.droid.views.DroidView;
 import ua.external.base.oop.droid.controllers.DroidController;
 import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.droids.droidfactory.DroidMaker;
+import ua.external.base.oop.droid.serialization.DroidsDeserialization;
+import ua.external.base.oop.droid.serialization.DroidsSerialization;
+
+
 
 import java.util.ArrayList;
 
@@ -38,15 +42,6 @@ public class DroidsWar {
         Droid seventh = droidFactory.createDroid(40, 35, 25, "Mat");
 
 
-
-       /* Droid first = new HouseworkerDroid(40,30,30, "Bob", "dishwasher");
-        Droid second = new HouseworkerDroid(35,30,35, "Rob", "cleaner");
-        /*Droid third = new AthleteDroid(35,30,35, "Chuck", 1.2);
-        Droid fourth = new AthleteDroid(35,30,35, "Nick");
-        Droid fifth = new AthleteDroid(45,20,35, "Ben", 0.8);
-        Droid seventh = new AthleteDroid(50,20,30, "Cristian");
-        Droid sixth = new AthleteDroid(45,20,35, "Tobias"); */
-
         warriors.add(first);
         warriors.add(second);
         warriors.add(third);
@@ -55,6 +50,14 @@ public class DroidsWar {
         warriors.add(sixth);
         warriors.add(sixth);
         warriors.add(seventh);
+
+        /*DroidsSerialization.writeDroidsToBinaryFile(warriors);
+        DroidsSerialization.writeDroidsToTextFile(warriors);
+        System.out.println("\n\n");
+        DroidsDeserialization.readDroidsFromBinaryFile();
+        System.out.println("\n\n");
+        DroidsDeserialization.readDroidsFromTextFile();
+        System.out.println("\n\n");*/
 
         DroidController controller = new DroidController(warriors,view);
 

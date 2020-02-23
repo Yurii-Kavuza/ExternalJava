@@ -5,7 +5,9 @@ import ua.external.base.oop.droid.droids.behavior.EnergyBehavior;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 
-public abstract class Droid {
+import java.io.Serializable;
+
+public abstract class Droid implements Serializable {
     private int MAX_VALUE = 100;
     private String name;
     private int health;

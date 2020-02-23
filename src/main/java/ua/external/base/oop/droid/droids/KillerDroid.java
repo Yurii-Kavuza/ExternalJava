@@ -28,4 +28,7 @@ public class KillerDroid extends Droid
 	{
 		return extraDamage;
 	}
+
+	@Override
+	public String toString() {return super.toString() + ", extraDamage = " + extraDamage;}
 }
