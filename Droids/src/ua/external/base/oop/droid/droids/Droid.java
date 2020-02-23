@@ -2,9 +2,11 @@ package ua.external.base.oop.droid.droids;
 
 import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
 import ua.external.base.oop.droid.droids.behavior.EnergyBehavior;
+import ua.external.base.oop.droid.resource.Keys;
+import ua.external.base.oop.droid.resource.ResourceManager;
 
 public abstract class Droid {
-    private int MAX_VALUE=100;
+    private int MAX_VALUE = 100;
     private String name;
     private int health;
     DamageBehavior damageBehavior;
@@ -12,6 +14,8 @@ public abstract class Droid {
 
     private boolean alive = true;
     private String resultAfterFight;
+
+    ResourceManager resourceManager = ResourceManager.INSTANCE;
 
     public Droid() {
     }
@@ -22,34 +26,40 @@ public abstract class Droid {
         this.energyBehavior = droid.energyBehavior;
         this.damageBehavior = droid.damageBehavior;
         this.alive = true;
-        droid=null;
+        droid = null;
     }
 
     public Droid(int health, int energy, int damage, String name) {
-        if((health + energy + damage)>MAX_VALUE || ((health + energy + damage)<1 && health<1)) {
-            setEssentialParameters(0,0,damage,"Broken droid");
-            this.alive =false;
-            System.out.println("Pay attention! Sum of health's, energy's and damage's points must be " + MAX_VALUE +
-                    ". You have created broken droid and it can not fight because it is not alive.");
-        }else if(energy<1 && damage<1){
-            setEssentialParameters(health,energy,damage,name);
-            System.out.println("Pay attention! You have created droid that can not fight and protect itself.");
-        }else if(energy<1){
-            setEssentialParameters(health,energy,damage,name);
-            System.out.println("Pay attention! You have created droid that can not protect itself.");
-        }else if(damage<1){
-            setEssentialParameters(health,energy,damage,name);
-            System.out.println("Pay attention! You have created droid that can not fight.");
-        }else{
-            setEssentialParameters(health,energy,damage,name);
+        if ((health + energy + damage) > MAX_VALUE || ((health + energy + damage) < 1 && health < 1)) {
+            setEssentialParameters(0, 0, damage, "Broken droid");
+            this.alive = false;
+            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE +
+                    resourceManager.getString(Keys.SUM_COMPONENTS_KEY) + MAX_VALUE + Keys.POINT +
+                    Keys.SPACE + resourceManager.getString(Keys.BROKEN_KEY));
+            /*System.out.println("Pay attention! Sum of health's, energy's and damage's points must be " + MAX_VALUE +
+                    ". You have created broken droid and it can not fight because it is not alive.");*/
+        } else if (energy < 1 && damage < 1) {
+            setEssentialParameters(health, energy, damage, name);
+            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_FIGHT_PROTECT_KEY));
+            /*System.out.println("Pay attention! You have created droid that can not fight and protect itself.");*/
+        } else if (energy < 1) {
+            setEssentialParameters(health, energy, damage, name);
+            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_PROTECT_KEY));
+            //System.out.println("Pay attention! You have created droid that can not protect itself.");
+        } else if (damage < 1) {
+            setEssentialParameters(health, energy, damage, name);
+            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_FIGHT_KEY));
+            //System.out.println("Pay attention! You have created droid that can not fight.");
+        } else {
+            setEssentialParameters(health, energy, damage, name);
         }
     }
 
-    protected void setEssentialParameters(int health, int energy, int damage, String name){
+    protected void setEssentialParameters(int health, int energy, int damage, String name) {
         this.health = health;
         this.energyBehavior.setEnergy(energy);
         this.damageBehavior.setDamage(damage);
-        this.name=name;
+        this.name = name;
     }
 
     public void setDamageBehavior(DamageBehavior damageBehavior) {
@@ -72,27 +82,27 @@ public abstract class Droid {
         this.health = health;
     }
 
-    public int performEnergy(){
+    public int performEnergy() {
         return energyBehavior.getEnergy();
     }
 
-    public void modifyEnergy(int value){
+    public void modifyEnergy(int value) {
         energyBehavior.setEnergy(value);
     }
 
-    public void modifyEnergy(){
+    public void modifyEnergy() {
         energyBehavior.setEnergy();
     }
 
-    public int performDamage(){
+    public int performDamage() {
         return damageBehavior.getDamage();
     }
 
-    public void modifyDamage(int value){
+    public void modifyDamage(int value) {
         damageBehavior.setDamage(value);
     }
 
-    public void modifyDamage(){
+    public void modifyDamage() {
         damageBehavior.setDamage();
     }
 
@@ -112,33 +122,61 @@ public abstract class Droid {
         this.resultAfterFight = resultAfterFight;
     }
 
-    public int attempts (Droid droid){
-        int attempt=0;
+    public int attempts(Droid droid) {
+        int attempt = 0;
         int delta;
-        boolean haveHealth=true;
+        boolean haveHealth = true;
 
-        if (this.damageBehavior.getDamage()>=droid.energyBehavior.getEnergy()){
-            delta=(this.damageBehavior.getDamage()-droid.energyBehavior.getEnergy())*2+1;
-        }else {
-            delta=(droid.energyBehavior.getEnergy()-this.damageBehavior.getDamage())/2;
+        if (this.damageBehavior.getDamage() >= droid.energyBehavior.getEnergy()) {
+            delta = (this.damageBehavior.getDamage() - droid.energyBehavior.getEnergy()) * 2 + 1;
+        } else {
+            delta = (droid.energyBehavior.getEnergy() - this.damageBehavior.getDamage()) / 2;
         }
-        while(haveHealth){
-            droid.setHealth(droid.getHealth()-delta);
-            if (droid.getHealth()<=0){
+        while (haveHealth) {
+            droid.setHealth(droid.getHealth() - delta);
+            if (droid.getHealth() <= 0) {
                 attempt++;
-                haveHealth=false;
-            }else {
+                haveHealth = false;
+            } else {
                 attempt++;
             }
         }
         return attempt;
     }
 
-    public void fight(Droid droid){
-        int healthDroidFirstBefore=this.getHealth();
-        int healthDroidSecondBefore=droid.getHealth();
+    public void fight(Droid droid) {
+        int healthDroidFirstBefore = this.getHealth();
+        int healthDroidSecondBefore = droid.getHealth();
 
-        if (this.attempts(droid)>droid.attempts(this)){
+        if (this.attempts(droid) > droid.attempts(this)) {
+            this.setHealth(healthDroidFirstBefore);
+            droid.setAlive(false);
+            this.setResultAfterFight("" + this.getName() + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.WON_KEY)
+                    + Keys.SPACE +
+                    resourceManager.getString(Keys.FIGHT_AGAINST_KEY)
+                    + Keys.SPACE + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.MAKING_KEY) + Keys.SPACE + this.attempts(droid) + Keys.SPACE
+                    + resourceManager.getString(Keys.ATTEMPTS_KEY));
+        } else if (this.attempts(droid) < droid.attempts(this)) {
+            droid.setHealth(healthDroidFirstBefore);
+            this.setAlive(false);
+            droid.setResultAfterFight("" + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.WON_KEY) + Keys.SPACE + resourceManager.getString(Keys.FIGHT_AGAINST_KEY)
+                    + Keys.SPACE + this.getName() + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.MAKING_KEY) + Keys.SPACE + droid.attempts(this) + Keys.SPACE
+                    + resourceManager.getString(Keys.ATTEMPTS_KEY));
+        } else {
+            this.setHealth(healthDroidFirstBefore);
+            droid.setHealth(healthDroidFirstBefore);
+            this.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) + Keys.SPACE + this.getName()
+                    + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE + resourceManager.getString(Keys.AND_KEY)
+                    + Keys.SPACE + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName());
+            droid.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) + Keys.SPACE + droid.getName()
+                    + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE + resourceManager.getString(Keys.AND_KEY)
+                    + Keys.SPACE + this.getName() + Keys.SPACE + this.getClass().getSimpleName());
+        }
+        /*if (this.attempts(droid)>droid.attempts(this)){
             this.setHealth(healthDroidFirstBefore);
             droid.setAlive(false);
             this.setResultAfterFight("" + this.getName() + " " + this.getClass().getSimpleName() + " has won " +
@@ -159,7 +197,7 @@ public abstract class Droid {
             droid.setResultAfterFight("Nobody has won in fight between " + droid.getName() + " "
                     + droid.getClass().getSimpleName() + " and " + this.getName() + " " +
                     this.getClass().getSimpleName());
-        }
+        }*/
     }
 
     @Override
