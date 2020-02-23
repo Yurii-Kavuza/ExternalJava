@@ -168,7 +168,7 @@ public abstract class Droid {
                     + resourceManager.getString(Keys.ATTEMPTS_KEY));
         } else {
             this.setHealth(healthDroidFirstBefore);
-            droid.setHealth(healthDroidFirstBefore);
+            droid.setHealth(healthDroidSecondBefore);
             this.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) + Keys.SPACE + this.getName()
                     + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE + resourceManager.getString(Keys.AND_KEY)
                     + Keys.SPACE + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName());
