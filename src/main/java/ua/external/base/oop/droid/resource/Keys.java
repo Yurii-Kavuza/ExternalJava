@@ -8,6 +8,9 @@ public class Keys {
     public static final String ACTION_SIGN_IN_USUAL_USER ="start.menu.action.sign.in.usual.user";
     public static final String ACTION_EXIT ="start.menu.action.exit";
 
+    public static final String INPUT_LOGIN ="connection.input.login";
+
+
     public static final String SPACE = " ";
     public static final String GREETING_KEY = "tournament.input.greeting";
     public static final String QUANTITY_OF_COMPETITORS_KEY = "tournament.input.quantity.of.competitors";

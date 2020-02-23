@@ -9,11 +9,11 @@ import ua.external.base.oop.droid.serialization.DroidsDeserialization;
 import ua.external.base.oop.droid.serialization.DroidsSerialization;
 
 
-
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class DroidsWar {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         DroidView view = new DroidView();
         ArrayList<Droid> warriors = new ArrayList<>();
