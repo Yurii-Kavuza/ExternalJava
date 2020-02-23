@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SerializedDroids.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializedDroids.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/AdminUserMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/AdminUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UsualUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoctorDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoctorDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/FlightDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/FlightDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/KillerDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/KillerDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/SelfHealingDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/SelfHealingDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/DamageBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/DamageBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/DamageWithoutWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/DamageWithoutWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/EnergyUsual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/EnergyUsual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/NoDamage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/NoDamage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/NoEnergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/NoEnergy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsDeserialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ua.external.base.oop.droid.session" />
       <recent name="ua.external.base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -94,10 +96,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Project_Structure/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373651948" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1582295119285">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1582476257991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582295119285" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582476257991" />
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582373895546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -110,6 +112,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="279" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373946217" />
+    <state x="1976" y="383" width="461" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582475775617">
+      <screen x="1366" y="0" width="1680" height="1050" />
+    </state>
+    <state x="1976" y="383" width="461" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582475775617" />
     <state x="479" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1582373914259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -118,26 +124,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="357" y="72" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373632933" />
-    <state width="1322" height="172" key="GridCell.Tab.0.bottom" timestamp="1582374077148">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1636" height="206" key="GridCell.Tab.0.bottom" timestamp="1582476638124">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582374077148" />
-    <state width="1636" height="159" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
-    <state width="1322" height="172" key="GridCell.Tab.0.center" timestamp="1582374077148">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1636" height="206" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582476638124" />
+    <state width="1636" height="206" key="GridCell.Tab.0.center" timestamp="1582476638124">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="172" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582374077148" />
-    <state width="1636" height="159" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
-    <state width="1322" height="172" key="GridCell.Tab.0.left" timestamp="1582374077148">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1636" height="206" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582476638124" />
+    <state width="1636" height="206" key="GridCell.Tab.0.left" timestamp="1582476638123">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="172" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582374077148" />
-    <state width="1636" height="159" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
-    <state width="1322" height="172" key="GridCell.Tab.0.right" timestamp="1582374077148">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1636" height="206" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582476638123" />
+    <state width="1636" height="206" key="GridCell.Tab.0.right" timestamp="1582476638124">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1322" height="172" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582374077148" />
-    <state width="1636" height="159" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582296224328" />
+    <state width="1636" height="206" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582476638124" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1582225029721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

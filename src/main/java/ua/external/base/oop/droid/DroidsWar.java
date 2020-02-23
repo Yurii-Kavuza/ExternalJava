@@ -61,6 +61,6 @@ public class DroidsWar {
 
         DroidController controller = new DroidController(warriors,view);
 
-        controller.startTournament();
+        controller.startGame();
     }
 }

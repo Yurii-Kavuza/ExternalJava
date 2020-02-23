@@ -22,6 +22,12 @@ public class DroidController {
         this.view = view;
     }
 
+    public void startGame(){
+        chooseLanguage();
+
+        startTournament();
+    }
+
     public void chooseLanguage() {
         Scanner scanner = new Scanner(System.in);
 
@@ -41,7 +47,6 @@ public class DroidController {
     }
 
     public void startTournament() {
-        chooseLanguage();
         view.printGreeting();
         view.printQuantityOfCompetitors(droids.size());
 
