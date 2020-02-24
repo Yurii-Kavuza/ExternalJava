@@ -9,6 +9,7 @@ public class Keys {
     public static final String ACTION_EXIT ="start.menu.action.exit";
 
     public static final String INPUT_LOGIN ="connection.input.login";
+    public static final String INPUT_PASSWORD ="connection.input.password";
 
 
     public static final String SPACE = " ";

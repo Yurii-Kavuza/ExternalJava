@@ -9,6 +9,7 @@ import ua.external.base.oop.droid.views.DroidView;
 
 
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
@@ -28,7 +29,7 @@ public class DroidController {
     public void startGame() throws IOException {
         chooseLanguage();
         startGameMenu();
-        startTournament();
+        //startTournament();
     }
 
     public void chooseLanguage() {
@@ -79,6 +80,10 @@ public class DroidController {
                 continue;
             }
         }
+    }
+
+    private void startUserMenu(){
+
     }
 
     public void startTournament() {
