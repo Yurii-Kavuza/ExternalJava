@@ -1,5 +1,7 @@
 package ua.external.base.oop.droid.session;
 
+
+import ua.external.base.oop.droid.exceptions.AdminLoginException;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 
@@ -14,29 +16,29 @@ public class Connection {
         System.out.println("We develop registration");
     }
 
-    public void authorisation (){
-        System.out.println("We develop this part");
-    }
-
-    public void signInAsAdminUser() throws IOException{
-        System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
-        String inputLogin;
-
-        try(BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))){
-            inputLogin=bufferedReader.readLine();
-        }
-        System.out.println(inputLogin);
-
-
+    public void signInAsAdminUser() throws IOException {
+//        String inputLogin = null;
+//
+//        System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
+//
+//        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
+//            inputLogin = bufferedReader.readLine();
+//            System.out.println(inputLogin);
+//        }catch (AdminLoginException e){
+//            System.out.println("Wrong login");
+//            e.printStackTrace();
+//        }
     }
 
     public void signInAsUsualUser(){
         System.out.println("We develop this part");
     }
 
-    public boolean checkValue(String value){
-        boolean checkResult=false;
+    public boolean isLoginPresent(String login, String sourcePath) throws IOException{
+        boolean result=false;
 
-        return checkResult;
+        return result;
     }
+
+
 }
