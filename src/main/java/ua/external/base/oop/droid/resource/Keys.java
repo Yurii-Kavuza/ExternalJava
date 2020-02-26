@@ -2,11 +2,14 @@ package ua.external.base.oop.droid.resource;
 
 public class Keys {
     public static final String CHOOSE_LANG = "Hi! Dear user, please, choose the language:\n1 - ua;\n2-us (default);";
-    public static final String CHOOSE_ACTION ="start.menu.choose.action";
-    public static final String ACTION_REGISTER ="start.menu.action.register";
-    public static final String ACTION_SIGN_IN_ADMIN_USER ="start.menu.action.sign.in.admin.user";
-    public static final String ACTION_SIGN_IN_USUAL_USER ="start.menu.action.sign.in.usual.user";
-    public static final String ACTION_EXIT ="start.menu.action.exit";
+    public static final String ACTION_WELCOME ="menu.welcome";
+    public static final String CHOOSE_ACTION ="menu.choose.action";
+    public static final String ACTION_SIGN_UP ="start.menu.action.sign.up";
+    public static final String ACTION_SIGN_IN ="start.menu.action.sign.in";
+    public static final String ACTION_EXIT ="menu.action.exit";
+    public static final String ACTION_START_TOURNAMENT = "user.menu.start.tournament";
+    public static final String ACTION_LOGOUT ="user.menu.logout";
+    public static final String ACTION_SEE_ALL_DROIDS ="user.menu.see.all.droids";
 
     public static final String INPUT_LOGIN ="connection.input.login";
     public static final String INPUT_PASSWORD ="connection.input.password";

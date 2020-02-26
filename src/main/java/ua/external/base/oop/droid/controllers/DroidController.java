@@ -11,9 +11,7 @@ import ua.external.base.oop.droid.views.DroidView;
 
 
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -59,7 +57,6 @@ public class DroidController {
 
         view.printStartMenu();
         while (true){
-            // check int - input
             while (!scanner.hasNextInt()) {
                 view.printStartMenu();
                 scanner.next();
@@ -94,7 +91,7 @@ public class DroidController {
     public void adminMenu() throws IOException{
         Scanner scanner = new Scanner(System.in);
         while (true){
-            System.out.println("Choose action:\n1 - start tournament;\n2 - see all droids;\n3 - logout;\n0 - exit");
+            view.printAdminMenu();
 
             while (!scanner.hasNextInt()) {
                 view.printStartMenu();
@@ -105,7 +102,7 @@ public class DroidController {
             if (numOfAction==1) {
                 startTournament();
             }else if (numOfAction==2) {
-                System.out.println(droids);
+                view.printMessage(getDroidsInfo());
             }else if (numOfAction==3) {
                 startGameMenu();
             } else if (numOfAction==0) {
@@ -117,7 +114,7 @@ public class DroidController {
     public void userMenu() throws IOException{
         Scanner scanner = new Scanner(System.in);
         while (true){
-            System.out.println("Choose action:\n1 - start tournament;\n2 - logout;\n0 - exit");
+            view.printUserMenu();
 
             while (!scanner.hasNextInt()) {
                 view.printStartMenu();
@@ -134,7 +131,6 @@ public class DroidController {
             }
         }
     }
-
 
     public void startTournament() {
         view.printGreeting();
@@ -172,5 +168,12 @@ public class DroidController {
 
         view.printWinnerOfTournament(droids.get(0));
         view.printBeforeWePart();
+    }
+
+    public String getDroidsInfo() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Droid droid : droids)
+            stringBuilder.append(droid.toString() + '\n');
+        return stringBuilder.toString();
     }
 }

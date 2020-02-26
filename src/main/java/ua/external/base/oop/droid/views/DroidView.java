@@ -16,10 +16,29 @@ public class DroidView {
     }
 
     public void printStartMenu() {
-        printMessage(resourceManager.getString(Keys.CHOOSE_ACTION) +
-                resourceManager.getString(Keys.ACTION_REGISTER)+
-                resourceManager.getString(Keys.ACTION_SIGN_IN_ADMIN_USER) +
-                resourceManager.getString(Keys.ACTION_EXIT));
+        printMessage(
+                resourceManager.getString(Keys.ACTION_WELCOME) +
+                        resourceManager.getString(Keys.CHOOSE_ACTION) +
+                        resourceManager.getString(Keys.ACTION_SIGN_UP) +
+                        resourceManager.getString(Keys.ACTION_SIGN_IN) +
+                        resourceManager.getString(Keys.ACTION_EXIT));
+    }
+
+    public void printUserMenu() {
+        printMessage(
+                resourceManager.getString(Keys.CHOOSE_ACTION) +
+                        resourceManager.getString(Keys.ACTION_START_TOURNAMENT) +
+                        resourceManager.getString(Keys.ACTION_LOGOUT) +
+                        resourceManager.getString(Keys.ACTION_EXIT));
+    }
+
+    public void printAdminMenu() {
+        printMessage(
+                resourceManager.getString(Keys.CHOOSE_ACTION) +
+                        resourceManager.getString(Keys.ACTION_START_TOURNAMENT) +
+                        resourceManager.getString(Keys.ACTION_SEE_ALL_DROIDS) +
+                        resourceManager.getString(Keys.ACTION_LOGOUT) +
+                        resourceManager.getString(Keys.ACTION_EXIT));
     }
 
     public void printQuantityOfCompetitors(int quantity) {
