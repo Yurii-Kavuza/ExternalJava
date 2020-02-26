@@ -5,12 +5,15 @@ import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 import ua.external.base.oop.droid.session.Connection;
+import ua.external.base.oop.droid.session.users.User;
+import ua.external.base.oop.droid.session.users.UserRole;
 import ua.external.base.oop.droid.views.DroidView;
 
 
 import java.io.IOException;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -20,6 +23,7 @@ public class DroidController {
     private Droid droid2;
     private DroidView view;
     private Connection connection = new Connection();
+    private User user;
 
     public DroidController(ArrayList<Droid> droids, DroidView view) {
         this.droids = droids;
@@ -29,7 +33,6 @@ public class DroidController {
     public void startGame() throws IOException {
         chooseLanguage();
         startGameMenu();
-        //startTournament();
     }
 
     public void chooseLanguage() {
@@ -62,16 +65,12 @@ public class DroidController {
                 scanner.next();
             }
 
-            // check the type of action
             numOfAction = scanner.nextInt();
             if (numOfAction==1) {
-                connection.register();
+                user = connection.register();
                 break;
             }else if (numOfAction==2) {
-                connection.signInAsAdminUser();
-                break;
-            }else if (numOfAction==3) {
-                connection.signInAsUsualUser();
+                user = connection.signIn();
                 break;
             }else if (numOfAction==0) {
                 System.exit(0);
@@ -80,11 +79,62 @@ public class DroidController {
                 continue;
             }
         }
+        gameUserMenu();
     }
 
-    private void startUserMenu(){
-
+    public void gameUserMenu() throws IOException{
+        if(user.getRole() == UserRole.USER_ROLE){
+            userMenu();
+        }
+        else if(user.getRole() == UserRole.ADMIN_ROLE){
+            adminMenu();
+        }
     }
+
+    public void adminMenu() throws IOException{
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            System.out.println("Choose action:\n1 - start tournament;\n2 - see all droids;\n3 - logout;\n0 - exit");
+
+            while (!scanner.hasNextInt()) {
+                view.printStartMenu();
+                scanner.next();
+            }
+
+            int numOfAction = scanner.nextInt();
+            if (numOfAction==1) {
+                startTournament();
+            }else if (numOfAction==2) {
+                System.out.println(droids);
+            }else if (numOfAction==3) {
+                startGameMenu();
+            } else if (numOfAction==0) {
+                System.exit(0);
+            }
+        }
+    }
+
+    public void userMenu() throws IOException{
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            System.out.println("Choose action:\n1 - start tournament;\n2 - logout;\n0 - exit");
+
+            while (!scanner.hasNextInt()) {
+                view.printStartMenu();
+                scanner.next();
+            }
+
+            int numOfAction = scanner.nextInt();
+            if (numOfAction==1) {
+                startTournament();
+            }else if (numOfAction==2) {
+                startGameMenu();
+            } else if (numOfAction==0) {
+                System.exit(0);
+            }
+        }
+    }
+
 
     public void startTournament() {
         view.printGreeting();

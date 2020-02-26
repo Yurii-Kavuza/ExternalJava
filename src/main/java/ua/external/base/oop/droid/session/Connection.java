@@ -2,82 +2,121 @@ package ua.external.base.oop.droid.session;
 
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
+import ua.external.base.oop.droid.session.users.User;
+import ua.external.base.oop.droid.session.users.UserRole;
 
 import java.io.*;
 
 public class Connection {
     ResourceManager resourceManager = ResourceManager.INSTANCE;
-    private boolean haveAccessRight=false;
-    private boolean signedInAsAdminUser=false;
-    private String login;
-    private String password;
-    private String sourcePathAdminUsers="src\\main\\resources\\additionalData\\adminUsers.csv";
-    private String sourcePathUsualUsers="src\\main\\resources\\additionalData\\usualUsers.csv";
 
-    public void register(){
-        System.out.println("We develop registration");
+    private String sourcePathUsers = "src/main/resources/additionalData/users.csv";
+
+    public User register() throws IOException {
+        String inputLogin;
+        String inputPass;
+
+        System.out.println(resourceManager.getString(Keys.INPUT_SIGN_UP));
+
+        for (; ; ) {
+            System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            inputLogin = bufferedReader.readLine();
+            if (isLoginCorrect(inputLogin) && !isLoginExist(inputLogin)) {
+                break;
+            }
+            System.out.println(resourceManager.getString(Keys.INPUT_LOGIN_INCORRECT));
+        }
+
+        for (; ; ) {
+            System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            inputPass = bufferedReader.readLine();
+            if (isPassCorrect(inputPass)) {
+                break;
+            }
+            System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD_INCORRECT));
+        }
+
+        User user = new User(inputLogin, inputPass, UserRole.USER_ROLE);
+
+        saveUser(user);
+
+        return user;
     }
 
-    public void signInAsAdminUser() throws IOException {
-        signIn(sourcePathAdminUsers);
+    public boolean isLoginCorrect(String login) {
+        return login.matches("[A-Za-z\\d.-]{3,20}");
     }
 
-    public void signInAsUsualUser() throws IOException {
-        signIn(sourcePathUsualUsers);
+    public boolean isLoginExist(String login) throws IOException{
+        try (BufferedReader bufferedReader = new BufferedReader(
+                new FileReader(sourcePathUsers))) {
+
+            String line = "";
+
+            while ((line = bufferedReader.readLine()) != null) {
+                String userLogin = line.substring(0,line.indexOf(";"));
+
+                if (userLogin.equals(login)) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 
-    public void signIn(String sourcePath) throws IOException {
+    public boolean isPassCorrect(String password) {
+        return password.matches("^(?![0-9]{6,20})[0-9a-zA-Z]{6,20}$");
+    }
+
+    public void saveUser(User user) throws IOException{
+        try(FileWriter fw = new FileWriter(sourcePathUsers, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw))
+        {
+            out.println(user.getLogin()+";"+user.getPassword()+";"+user.getRole());
+        }
+    }
+
+    public User signIn() throws IOException {
         String inputLogin = null;
         String inputPass = null;
+
+        System.out.println(resourceManager.getString(Keys.INPUT_SIGN_IN));
         System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        inputLogin = bufferedReader.readLine();
 
-        while(true){
-            inputLogin = bufferedReader.readLine();
-            while(inputLogin==null||inputLogin.length()==0||inputLogin.equals("\n")) {
-                System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
-                inputLogin = bufferedReader.readLine();
-            }
-            if(isLoginPresent(inputLogin,sourcePath)){
-                while (!isPasswordPresent(bufferedReader)){
-                    if(isPasswordPresent(bufferedReader)) break;
-                }
-                break;
-            }else {
-                System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
-                continue;
-            }
-        }
-    }
-
-    private boolean isLoginPresent(String login, String sourcePath) throws IOException{
-        boolean result=false;
-        try(BufferedReader bufferedReader = new BufferedReader(
-                new FileReader(sourcePath))){
-            String line = "";
-            while((line = bufferedReader.readLine())!=null){
-                String tempLogin=line.substring(0,line.indexOf(";"));
-                if(tempLogin.equals(login)){
-                    this.password=line.substring(line.indexOf(";")+1);
-                    this.haveAccessRight=true;
-                    result=true;
-                    break;
-                }
-            }
-        }
-        return result;
-    }
-
-    private boolean isPasswordPresent(BufferedReader bufferedReader) throws IOException{
-        boolean result=false;
-        String inputPass = null;
         System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD));
-        inputPass=bufferedReader.readLine();
-        while(inputPass==null||inputPass.length()==0||inputPass.equals("\n")){
-            System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD));
-            inputPass=bufferedReader.readLine();
-        }
-        if(inputPass.equals(this.password)) result=true;
-        return result;
+        inputPass = bufferedReader.readLine();
+
+        User user = isUserPresent(inputLogin, inputPass);
+        if (user != null)
+            return user;
+        else return register();
     }
+
+    private User isUserPresent(String login, String pass) throws IOException {
+        try (BufferedReader bufferedReader = new BufferedReader(
+                new FileReader(sourcePathUsers))) {
+
+            String line = "";
+
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] userInfo = line.split(";");
+
+                if (userInfo[0].equals(login)) {
+                    if (userInfo[1].equals(pass)) {
+                        String role = userInfo[2];
+                        return new User(login, pass, UserRole.valueOf(role));
+                    }
+                }
+            }
+            System.out.println(resourceManager.getString(Keys.INPUT_USER_INCORRECT));
+            return null;
+        }
+    }
+
 }

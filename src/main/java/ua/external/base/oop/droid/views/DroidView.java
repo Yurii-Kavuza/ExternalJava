@@ -7,17 +7,6 @@ import ua.external.base.oop.droid.resource.ResourceManager;
 public class DroidView {
     private ResourceManager resourceManager = ResourceManager.INSTANCE;
 
-    /*public static final String CHOOSE_LANG = "Hi! Dear user, please, choose the language:\n1 - ua;\n2-us (default);";
-    public static final String SPACE = " ";
-    public static final String GREETING_KEY = "tournament.input.greeting";
-    public static final String QUANTITY_OF_COMPETITORS_KEY = "tournament.input.quantity.of.competitors";
-    public static final String COMPETITORS_KEY = "tournament.input.competitors";
-    public static final String WINNER_OF_FIGHT_KEY = "tournament.input.winner";
-    public static final String NO_WINNER_KEY = "tournament.input.no.winner";
-    public static final String WINNER_OF_TOURNAMENT_KEY = "tournament.input.winner.tournament";
-    public static final String BEFORE_WE_PART_KEY = "tournament.input.before.we.part";
-    public static final String AND_KEY = "input.and";*/
-
     public void printMessage(String message) {
         System.out.println(message);
     }
@@ -30,7 +19,6 @@ public class DroidView {
         printMessage(resourceManager.getString(Keys.CHOOSE_ACTION) +
                 resourceManager.getString(Keys.ACTION_REGISTER)+
                 resourceManager.getString(Keys.ACTION_SIGN_IN_ADMIN_USER) +
-                resourceManager.getString(Keys.ACTION_SIGN_IN_USUAL_USER) +
                 resourceManager.getString(Keys.ACTION_EXIT));
     }
 

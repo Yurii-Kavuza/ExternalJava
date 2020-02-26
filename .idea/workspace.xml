@@ -2,35 +2,288 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/additionalData/usualUsers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/additionalData/usualUsers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/AdminUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UsualUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/additionalData/adminUsers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/additionalData/adminUsers.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Droids.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ExternalJava.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/ExternalJava.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/additionalData/adminUsers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/additionalData/adminUsers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/property/messages_en_EN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/property/messages_en_EN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/DroidsWar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/DroidsWar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/AthleteDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/AthleteDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/HouseworkerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/HouseworkerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/SelfHealingDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/SelfHealingDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageBehavior.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageBehavior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageWithoutWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageWithoutWeapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyBehavior.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyBehavior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyUsual.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyUsual.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoDamage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoDamage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoEnergy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoEnergy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/Repairable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/Repairable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/AthleteDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/AthleteDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoctorDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoctorDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoublePowerDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoublePowerDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/FlightDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/FlightDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/HouseworkerDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/HouseworkerDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/KillerDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/KillerDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/SelfHealingDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/SelfHealingDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminLoginException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminLoginException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminPassException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminPassException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualUException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualUException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualULoginException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualULoginException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualUPassException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualUPassException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/Keys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/Keys.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/ResourceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/ResourceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsDeserialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsDeserialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsSerialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/Connection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/AdminUserMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/AdminUserMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/AdminUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/UsualUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/views/DroidView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/views/DroidView.class" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/Droids/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/AdminUserMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/users.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+              <folding>
+                <element signature="method#chooseLanguage#0;class#DroidController#0" />
+                <element signature="method#startGameMenu#0;class#DroidController#0" />
+                <element signature="method#startTournament#0;class#DroidController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UserRole.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/additionalData/adminUsers.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UserRole.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/additionalData/users.csv" />
+        <option value="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectId" id="1Y5FtDojhfL8uyVsSUdnrfuX12H" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="droid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="droid" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="droid" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="property" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,8 +292,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582570861704" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -50,10 +306,25 @@
       <recent name="ua.external.base.oop.droid.session" />
       <recent name="ua.external.base" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/additionalData" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Yura\Prog\Java\repos\ExternalJava\src\main\resources" />
       <recent name="G:\Yura\Prog\Java\repos\ExternalJava" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="DroidsWar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -85,8 +356,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582224760733</updated>
+      <workItem from="1582549534336" duration="1842000" />
+      <workItem from="1582551630402" duration="6407000" />
+      <workItem from="1582712344557" duration="3921000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12170000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="733" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32761312" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Project_Structure" timestamp="1582373651948">
@@ -198,9 +512,145 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java</url>
           <line>63</line>
+          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UsualUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/AdminUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/AdminLoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/AdminException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/usualUsers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/ResourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/adminUsers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="method#register#0;class#Connection#0" />
+            <element signature="method#isLoginExist#0;class#Connection#0" />
+            <element signature="method#saveUser#0;class#Connection#0" />
+            <element signature="method#signIn#0;class#Connection#0" />
+            <element signature="method#isUserPresent#0;class#Connection#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/users.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/AdminUserMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding>
+            <element signature="method#chooseLanguage#0;class#DroidController#0" />
+            <element signature="method#startGameMenu#0;class#DroidController#0" />
+            <element signature="method#startTournament#0;class#DroidController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

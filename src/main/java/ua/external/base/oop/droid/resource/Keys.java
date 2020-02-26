@@ -10,7 +10,11 @@ public class Keys {
 
     public static final String INPUT_LOGIN ="connection.input.login";
     public static final String INPUT_PASSWORD ="connection.input.password";
-
+    public static final String INPUT_LOGIN_INCORRECT = "connection.input.login.incorrect";
+    public static final String INPUT_PASSWORD_INCORRECT = "connection.input.password.incorrect";
+    public static final String INPUT_USER_INCORRECT = "connection.input.user.incorrect";
+    public static final String INPUT_SIGN_UP = "connection.input.sign.up";
+    public static final String INPUT_SIGN_IN = "connection.input.sign.in";
 
     public static final String SPACE = " ";
     public static final String GREETING_KEY = "tournament.input.greeting";
