@@ -14,14 +14,21 @@ public abstract class Droid implements Serializable {
     protected String name;
     protected int health;
     protected boolean alive = true;
-    protected DamageBehavior damageBehavior;
-    protected EnergyBehavior energyBehavior;
+    DamageBehavior damageBehavior;
+    EnergyBehavior energyBehavior;
     protected String resultAfterFight;
 
     Droid() {
     }
 
     Droid(Builder builder){
+        name = builder.name;
+        health = builder.health;
+        alive = builder.alive;
+        damageBehavior = builder.damageBehavior;
+        energyBehavior = builder.energyBehavior;
+        resultAfterFight = builder.resultAfterFight;
+
     }
 
     abstract static class Builder<T extends Builder<T>>{
@@ -29,8 +36,9 @@ public abstract class Droid implements Serializable {
         private String name;
         private int health;
         private boolean alive = true;
-        private DamageBehavior damageBehavior;
-        private EnergyBehavior energyBehavior;
+        DamageBehavior damageBehavior;
+        EnergyBehavior energyBehavior;
+        protected String resultAfterFight;
 
         public Builder(int health, int energy, int damage, String name){
             if ((health + energy + damage) > MAX_VALUE || ((health + energy + damage) < 1 && health < 1)) {
@@ -65,24 +73,27 @@ public abstract class Droid implements Serializable {
             this.damageBehavior.setDamage(damage);
             this.name = name;
         }
+        public abstract Droid build();
 
-        public Builder damageBehavior(DamageBehavior value){
+        protected abstract Builder self();
+
+        public Builder damageBehavior(DamageBehavior value) {
             damageBehavior=value;
             return this;
         }
-        public Builder energyBehavior(EnergyBehavior value){
-            energyBehavior=value;
-            return this;
+
+        public void setEnergyBehavior(EnergyBehavior energyBehavior) {
+            this.energyBehavior = energyBehavior;
         }
-
-        abstract Droid build();
-
-        protected abstract Builder self();
 
     }
 
     public void setDamageBehavior(DamageBehavior damageBehavior) {
         this.damageBehavior = damageBehavior;
+    }
+
+    public void setEnergyBehavior(EnergyBehavior energyBehavior) {
+        this.energyBehavior = energyBehavior;
     }
 
     public String getName() {

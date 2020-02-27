@@ -15,6 +15,7 @@ public class DoctorDroid extends Droid implements Repairable {
 
 		public Builder(int health, int energy, int damage, String name) {
 			super(health, energy, damage, name);
+
 		}
 
 		public Builder criticalLevelOfHealth (int value){

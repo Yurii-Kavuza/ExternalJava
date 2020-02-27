@@ -2,7 +2,9 @@ package ua.external.base.oop.droid.droids.droidfactory;
 
 import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.droids.HouseworkerDroid;
+import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
 import ua.external.base.oop.droid.droids.behavior.NoDamage;
+import ua.external.base.oop.droid.droids.behavior.NoEnergy;
 
 public class HouseworkerDroidFactory implements DroidFactory
 {

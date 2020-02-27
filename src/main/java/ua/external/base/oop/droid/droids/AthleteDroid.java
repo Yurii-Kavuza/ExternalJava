@@ -1,21 +1,32 @@
 package ua.external.base.oop.droid.droids;
 
 
+import ua.external.base.oop.droid.droids.behavior.*;
 
 public class AthleteDroid extends Droid {
     private double multiplyPower;
+
+
+
 
     protected AthleteDroid(Builder builder) {
         super(builder);
         multiplyPower=builder.multiplyPower;
     }
 
-    public static class Builder extends Droid.Builder<Builder>{
+    public static class Builder extends Droid.Builder<Builder> {
         private double multiplyPower;
+
+
+
+
 
         public Builder(int health, int energy, int damage, String name) {
             super(health, energy, damage, name);
+
         }
+
+
 
         public Builder multiplyPower (double value){
             multiplyPower= value;
