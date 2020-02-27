@@ -2,6 +2,7 @@ package ua.external.base.oop.droid.droids;
 
 import ua.external.base.oop.droid.droids.behavior.DamageBehavior;
 import ua.external.base.oop.droid.droids.behavior.EnergyBehavior;
+import ua.external.base.oop.droid.droids.engine.EngineType;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 
@@ -61,6 +62,10 @@ public abstract class Droid implements Serializable {
 
     public void setDamageBehavior(DamageBehavior damageBehavior) {
         this.damageBehavior = damageBehavior;
+    }
+
+    public void setEnergyBehavior(EnergyBehavior energyBehavior) {
+        this.energyBehavior = energyBehavior;
     }
 
     public String getName() {
@@ -172,6 +177,32 @@ public abstract class Droid implements Serializable {
             droid.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) + Keys.SPACE + droid.getName()
                     + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE + resourceManager.getString(Keys.AND_KEY)
                     + Keys.SPACE + this.getName() + Keys.SPACE + this.getClass().getSimpleName());
+        }
+    }
+
+    class Engine{
+        EngineType type;
+        String vendor;
+        int id;
+        boolean isStarted;
+
+        void start(){
+            isStarted=true;
+            System.out.println("The engine " + this.toString() + " is started");
+        }
+
+        void stop(){
+            isStarted=false;
+            System.out.println("The engine " + this.toString() + " is stopped");
+        }
+
+        @Override
+        public String toString() {
+            return "Engine{" +
+                    "type=" + type +
+                    ", vendor='" + vendor + '\'' +
+                    ", id=" + id +
+                    '}';
         }
     }
 

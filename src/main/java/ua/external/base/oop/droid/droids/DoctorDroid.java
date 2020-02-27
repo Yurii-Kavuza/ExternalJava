@@ -1,10 +1,8 @@
 package ua.external.base.oop.droid.droids;
 
-import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
-import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
-import ua.external.base.oop.droid.droids.behavior.Repairable;
+import ua.external.base.oop.droid.droids.behavior.*;
 
-public class DoctorDroid extends Droid implements Repairable {
+public class DoctorDroid extends Droid implements Repairable, Flyable, Diveable {
 
 	private int criticalLevelOfHealth = 10;
 
