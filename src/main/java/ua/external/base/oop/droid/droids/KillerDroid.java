@@ -1,18 +1,28 @@
 package ua.external.base.oop.droid.droids;
 
-import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
-import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
-
-public class KillerDroid extends Droid
-{
+public class KillerDroid extends Droid {
 	// extra damage to kill another droid
 	int extraDamage;
 
-	public KillerDroid(int health, int energy, int damage, String name)
-	{
-		damageBehavior = new DamageWithoutWeapon();
-		energyBehavior = new EnergyUsual();
-		setEssentialParameters(health,energy,damage,name);
+	protected KillerDroid(Builder builder) {
+		super(builder);
+	}
+
+	public static class Builder extends Droid.Builder<Builder>{
+		public Builder(int health, int energy, int damage, String name) {
+			super(health, energy, damage, name);
+		}
+
+
+		@Override
+		public KillerDroid build() {
+			return new KillerDroid(this);
+		}
+
+		@Override
+		protected Builder self(){
+			return this;
+		}
 	}
 
 	public void killEnemy(Droid enemy)

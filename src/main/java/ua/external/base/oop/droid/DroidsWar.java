@@ -1,12 +1,13 @@
 package ua.external.base.oop.droid;
 
+import ua.external.base.oop.droid.droids.AthleteDroid;
+import ua.external.base.oop.droid.droids.DoctorDroid;
+import ua.external.base.oop.droid.droids.DoublePowerDroid;
 import ua.external.base.oop.droid.droids.droidfactory.DroidFactory;
 import ua.external.base.oop.droid.views.DroidView;
 import ua.external.base.oop.droid.controllers.DroidController;
 import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.droids.droidfactory.DroidMaker;
-import ua.external.base.oop.droid.serialization.DroidsDeserialization;
-import ua.external.base.oop.droid.serialization.DroidsSerialization;
 
 
 import java.io.IOException;
@@ -40,6 +41,10 @@ public class DroidsWar {
 
         droidFactory = DroidMaker.droidMaker("SelfHealingDroid");
         Droid seventh = droidFactory.createDroid(40, 35, 25, "Mat");
+
+//        Droid first = new AthleteDroid.Builder(35, 30, 35, "Chuck").build();
+//        Droid second = new DoctorDroid.Builder(40, 35, 25, "Ben").build();
+//        Droid third = new DoublePowerDroid.Builder(25, 45, 30, "Tobias").build();
 
 
         warriors.add(first);

@@ -1,15 +1,27 @@
 package ua.external.base.oop.droid.droids;
 
-import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
-import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
+public class FlightDroid extends Droid {
 
-public class FlightDroid extends Droid
-{
-	public FlightDroid(int health, int energy, int damage, String name)
-	{
-		damageBehavior = new DamageWithoutWeapon();
-		energyBehavior = new EnergyUsual();
-		setEssentialParameters(health,energy,damage,name);
+	protected FlightDroid(Builder builder) {
+		super(builder);
+	}
+
+	public static class Builder extends Droid.Builder<Builder>{
+
+
+		public Builder(int health, int energy, int damage, String name) {
+			super(health, energy, damage, name);
+		}
+
+		@Override
+		public FlightDroid build() {
+			return new FlightDroid(this);
+		}
+
+		@Override
+		protected Builder self() {
+			return this;
+		}
 	}
 
 	public void fly()

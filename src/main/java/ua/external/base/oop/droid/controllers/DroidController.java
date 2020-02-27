@@ -9,7 +9,6 @@ import ua.external.base.oop.droid.views.DroidView;
 
 
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;

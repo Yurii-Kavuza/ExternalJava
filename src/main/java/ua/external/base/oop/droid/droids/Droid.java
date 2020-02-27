@@ -8,55 +8,77 @@ import ua.external.base.oop.droid.resource.ResourceManager;
 import java.io.Serializable;
 
 public abstract class Droid implements Serializable {
-    private int MAX_VALUE = 100;
-    private String name;
-    private int health;
-    DamageBehavior damageBehavior;
-    EnergyBehavior energyBehavior;
+    protected static final int MAX_VALUE = 100;
+    protected static ResourceManager resourceManager = ResourceManager.INSTANCE;
 
-    private boolean alive = true;
-    private String resultAfterFight;
+    protected String name;
+    protected int health;
+    protected boolean alive = true;
+    protected DamageBehavior damageBehavior;
+    protected EnergyBehavior energyBehavior;
+    protected String resultAfterFight;
 
-    ResourceManager resourceManager = ResourceManager.INSTANCE;
-
-    public Droid() {
+    Droid() {
     }
 
-    public Droid(Droid droid) {
-        this.name = droid.getName();
-        this.health = droid.getHealth();
-        this.energyBehavior = droid.energyBehavior;
-        this.damageBehavior = droid.damageBehavior;
-        this.alive = true;
-        droid = null;
+    Droid(Builder builder){
     }
 
-    public Droid(int health, int energy, int damage, String name) {
-        if ((health + energy + damage) > MAX_VALUE || ((health + energy + damage) < 1 && health < 1)) {
-            setEssentialParameters(0, 0, damage, "Broken droid");
-            this.alive = false;
-            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE +
-                    resourceManager.getString(Keys.SUM_COMPONENTS_KEY) + MAX_VALUE + Keys.POINT +
-                    Keys.SPACE + resourceManager.getString(Keys.BROKEN_KEY));
-        } else if (energy < 1 && damage < 1) {
-            setEssentialParameters(health, energy, damage, name);
-            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_FIGHT_PROTECT_KEY));
-        } else if (energy < 1) {
-            setEssentialParameters(health, energy, damage, name);
-            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_PROTECT_KEY));
-        } else if (damage < 1) {
-            setEssentialParameters(health, energy, damage, name);
-            System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_FIGHT_KEY));
-        } else {
-            setEssentialParameters(health, energy, damage, name);
+    abstract static class Builder<T extends Builder<T>>{
+        //Essential parameters
+        private String name;
+        private int health;
+        private boolean alive = true;
+        private DamageBehavior damageBehavior;
+        private EnergyBehavior energyBehavior;
+
+        public Builder(int health, int energy, int damage, String name){
+            if ((health + energy + damage) > MAX_VALUE || ((health + energy + damage) < 1 && health < 1)) {
+                this.setEssentialParameters(0, 0, 0, "Broken droid");
+                this.alive = false;
+                System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE +
+                        resourceManager.getString(Keys.SUM_COMPONENTS_KEY) + MAX_VALUE + Keys.POINT +
+                        Keys.SPACE + resourceManager.getString(Keys.BROKEN_KEY));
+            } else if (energy < 1 && damage < 1) {
+                this.setEssentialParameters(health, energy, damage, name);
+                System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE +
+                        resourceManager.getString(Keys.NO_FIGHT_PROTECT_KEY));
+            } else if (energy < 1) {
+                this.setEssentialParameters(health, energy, damage, name);
+                System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE +
+                        resourceManager.getString(Keys.NO_PROTECT_KEY));
+            } else if (damage < 1) {
+                this.setEssentialParameters(health, energy, damage, name);
+                System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE +
+                        resourceManager.getString(Keys.NO_FIGHT_KEY));
+            } else {
+                this.setEssentialParameters(health, energy, damage, name);
+            }
         }
-    }
 
-    protected void setEssentialParameters(int health, int energy, int damage, String name) {
-        this.health = health;
-        this.energyBehavior.setEnergy(energy);
-        this.damageBehavior.setDamage(damage);
-        this.name = name;
+        protected Builder() {
+        }
+
+        private void setEssentialParameters(int health, int energy, int damage, String name) {
+            this.health = health;
+            this.energyBehavior.setEnergy(energy);
+            this.damageBehavior.setDamage(damage);
+            this.name = name;
+        }
+
+        public Builder damageBehavior(DamageBehavior value){
+            damageBehavior=value;
+            return this;
+        }
+        public Builder energyBehavior(EnergyBehavior value){
+            energyBehavior=value;
+            return this;
+        }
+
+        abstract Droid build();
+
+        protected abstract Builder self();
+
     }
 
     public void setDamageBehavior(DamageBehavior damageBehavior) {
@@ -148,30 +170,41 @@ public abstract class Droid implements Serializable {
         if (this.attempts(droid) > droid.attempts(this)) {
             this.setHealth(healthDroidFirstBefore);
             droid.setAlive(false);
-            this.setResultAfterFight("" + this.getName() + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE
+            this.setResultAfterFight("" + this.getName() + Keys.SPACE +
+                    this.getClass().getSimpleName() + Keys.SPACE
                     + resourceManager.getString(Keys.WON_KEY)
                     + Keys.SPACE +
                     resourceManager.getString(Keys.FIGHT_AGAINST_KEY)
-                    + Keys.SPACE + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE
-                    + resourceManager.getString(Keys.MAKING_KEY) + Keys.SPACE + this.attempts(droid) + Keys.SPACE
+                    + Keys.SPACE + droid.getName() + Keys.SPACE +
+                    droid.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.MAKING_KEY) +
+                    Keys.SPACE + this.attempts(droid) + Keys.SPACE
                     + resourceManager.getString(Keys.ATTEMPTS_KEY));
         } else if (this.attempts(droid) < droid.attempts(this)) {
             droid.setHealth(healthDroidFirstBefore);
             this.setAlive(false);
-            droid.setResultAfterFight("" + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE
-                    + resourceManager.getString(Keys.WON_KEY) + Keys.SPACE + resourceManager.getString(Keys.FIGHT_AGAINST_KEY)
-                    + Keys.SPACE + this.getName() + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE
-                    + resourceManager.getString(Keys.MAKING_KEY) + Keys.SPACE + droid.attempts(this) + Keys.SPACE
+            droid.setResultAfterFight("" + droid.getName() + Keys.SPACE +
+                    droid.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.WON_KEY) +
+                    Keys.SPACE + resourceManager.getString(Keys.FIGHT_AGAINST_KEY)
+                    + Keys.SPACE + this.getName() + Keys.SPACE +
+                    this.getClass().getSimpleName() + Keys.SPACE
+                    + resourceManager.getString(Keys.MAKING_KEY) +
+                    Keys.SPACE + droid.attempts(this) + Keys.SPACE
                     + resourceManager.getString(Keys.ATTEMPTS_KEY));
         } else {
             this.setHealth(healthDroidFirstBefore);
             droid.setHealth(healthDroidSecondBefore);
-            this.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) + Keys.SPACE + this.getName()
-                    + Keys.SPACE + this.getClass().getSimpleName() + Keys.SPACE + resourceManager.getString(Keys.AND_KEY)
-                    + Keys.SPACE + droid.getName() + Keys.SPACE + droid.getClass().getSimpleName());
-            droid.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) + Keys.SPACE + droid.getName()
-                    + Keys.SPACE + droid.getClass().getSimpleName() + Keys.SPACE + resourceManager.getString(Keys.AND_KEY)
-                    + Keys.SPACE + this.getName() + Keys.SPACE + this.getClass().getSimpleName());
+            this.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) +
+                    Keys.SPACE + this.getName() + Keys.SPACE +
+                    this.getClass().getSimpleName() + Keys.SPACE +
+                    resourceManager.getString(Keys.AND_KEY) + Keys.SPACE +
+                    droid.getName() + Keys.SPACE + droid.getClass().getSimpleName());
+            droid.setResultAfterFight(resourceManager.getString(Keys.NOBODY_WON_KEY) +
+                    Keys.SPACE + droid.getName() + Keys.SPACE +
+                    droid.getClass().getSimpleName() + Keys.SPACE +
+                    resourceManager.getString(Keys.AND_KEY) + Keys.SPACE +
+                    this.getName() + Keys.SPACE + this.getClass().getSimpleName());
         }
     }
 

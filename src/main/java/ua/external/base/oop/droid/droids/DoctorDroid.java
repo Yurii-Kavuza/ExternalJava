@@ -1,18 +1,36 @@
 package ua.external.base.oop.droid.droids;
 
-import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
-import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
 import ua.external.base.oop.droid.droids.behavior.Repairable;
 
 public class DoctorDroid extends Droid implements Repairable {
 
 	private int criticalLevelOfHealth = 10;
 
-	public DoctorDroid(int health, int energy, int damage, String name)
-	{
-		damageBehavior = new DamageWithoutWeapon();
-		energyBehavior = new EnergyUsual();
-		setEssentialParameters(health,energy,damage,name);
+	protected DoctorDroid(Builder builder) {
+		super(builder);
+	}
+
+	public static class Builder extends Droid.Builder<Builder>{
+		private int criticalLevelOfHealth = 10;
+
+		public Builder(int health, int energy, int damage, String name) {
+			super(health, energy, damage, name);
+		}
+
+		public Builder criticalLevelOfHealth (int value){
+			this.criticalLevelOfHealth= value;
+			return this;
+		}
+
+		@Override
+		public DoctorDroid build() {
+			return new DoctorDroid(this);
+		}
+
+		@Override
+		protected Builder self() {
+			return this;
+		}
 	}
 
 	public void medicalExamination(Droid patient)

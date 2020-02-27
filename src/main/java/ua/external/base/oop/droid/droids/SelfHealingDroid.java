@@ -1,22 +1,37 @@
 package ua.external.base.oop.droid.droids;
 
-import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
-import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
 import ua.external.base.oop.droid.droids.behavior.Repairable;
 
 public class SelfHealingDroid extends Droid implements Repairable {
     private double recoveryRatio;
 
-    public SelfHealingDroid(int health, int energy, int damage, String name, double recoveryRatio) {
-        this.recoveryRatio = recoveryRatio;
-        damageBehavior = new DamageWithoutWeapon();
-        energyBehavior = new EnergyUsual();
-        setEssentialParameters(health,energy,damage,name);
+    protected SelfHealingDroid(Builder builder) {
+        super(builder);
+        recoveryRatio=builder.recoveryRatio;
     }
 
-    public SelfHealingDroid(int health, int energy, int damage, String name)
-    {
-        this(health, energy, damage, name,1);
+    public static class Builder extends Droid.Builder<Builder>{
+        private double recoveryRatio;
+
+        public Builder(int health, int energy, int damage, String name) {
+            super(health, energy, damage, name);
+        }
+
+
+        public Builder recoveryRatio (double value){
+            recoveryRatio = value;
+            return this;
+        }
+
+        @Override
+        public SelfHealingDroid build() {
+            return new SelfHealingDroid(this);
+        }
+
+        @Override
+        protected Builder self(){
+            return this;
+        }
     }
 
     public double getRecoveryRatio() {
