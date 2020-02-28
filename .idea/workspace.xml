@@ -2,18 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/Diveable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/behavior/Flyable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/engine/EngineType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/WrongInputLoginByRegistrationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ExternalJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ExternalJava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/AthleteDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/AthleteDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoctorDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoctorDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/FlightDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/FlightDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/KillerDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/KillerDroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/additionalData/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/additionalData/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/AdminException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/AdminLoginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/AdminPassException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/UsualUException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/UsualULoginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/exceptions/UsualUPassException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ExternalJava.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/ExternalJava.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/additionalData/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/additionalData/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/DroidsWar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/DroidsWar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/AthleteDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/AthleteDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/HouseworkerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/HouseworkerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/SelfHealingDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/SelfHealingDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageBehavior.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageBehavior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageWithoutWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/DamageWithoutWeapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyBehavior.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyBehavior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyUsual.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/EnergyUsual.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoDamage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoDamage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoEnergy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/NoEnergy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/Repairable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/behavior/Repairable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/AthleteDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/AthleteDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoctorDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoctorDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoublePowerDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DoublePowerDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/DroidMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/FlightDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/FlightDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/HouseworkerDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/HouseworkerDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/KillerDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/KillerDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/SelfHealingDroidFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/droidfactory/SelfHealingDroidFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminLoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/AdminPassException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualUException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualULoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/exceptions/UsualUPassException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/Keys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/Keys.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/ResourceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/resource/ResourceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsDeserialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsDeserialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsSerialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/Connection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/AdminUserMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/AdminUserMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/session/users/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/views/DroidView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/views/DroidView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +69,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,10 +82,12 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="733" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1Y5FtDojhfL8uyVsSUdnrfuX12H" />
   <component name="ProjectViewState">
@@ -49,6 +96,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,9 +104,10 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582570861704" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -68,12 +117,12 @@
       <recent name="ua.external.base.oop.droid.session" />
       <recent name="ua.external.base" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/additionalData" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Yura\Prog\Java\repos\ExternalJava\src\main\resources" />
       <recent name="G:\Yura\Prog\Java\repos\ExternalJava" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/additionalData" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,6 +167,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Project_Structure" timestamp="1582373651948">
       <screen x="0" y="0" width="1366" height="728" />
@@ -152,25 +212,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="357" y="72" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373632933" />
-    <state width="1322" height="214" key="GridCell.Tab.0.bottom" timestamp="1582823806866">
+    <state width="1322" height="214" key="GridCell.Tab.0.bottom" timestamp="1582890254200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582823806866" />
+    <state width="1322" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582890254200" />
     <state width="1636" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166779" />
-    <state width="1322" height="214" key="GridCell.Tab.0.center" timestamp="1582823806866">
+    <state width="1322" height="214" key="GridCell.Tab.0.center" timestamp="1582890254200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582823806866" />
+    <state width="1322" height="214" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582890254200" />
     <state width="1636" height="282" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166779" />
-    <state width="1322" height="214" key="GridCell.Tab.0.left" timestamp="1582823806866">
+    <state width="1322" height="214" key="GridCell.Tab.0.left" timestamp="1582890254199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582823806866" />
+    <state width="1322" height="214" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582890254199" />
     <state width="1636" height="282" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166778" />
-    <state width="1322" height="214" key="GridCell.Tab.0.right" timestamp="1582823806866">
+    <state width="1322" height="214" key="GridCell.Tab.0.right" timestamp="1582890254200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582823806866" />
+    <state width="1322" height="214" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582890254200" />
     <state width="1636" height="282" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166779" />
     <state width="1636" height="346" key="GridCell.Tab.1.bottom" timestamp="1582545667180">
       <screen x="1366" y="0" width="1680" height="1050" />
@@ -188,18 +248,18 @@
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state width="1636" height="346" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582545667180" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1582225029721">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1582890121008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582225029721" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582890121008" />
     <state x="498" y="141" key="chooseDestDirectoryDialog" timestamp="1582373911416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="498" y="141" key="chooseDestDirectoryDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373911416" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582533563026">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582889567305">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582533563026" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582889567305" />
     <state x="0" y="0" width="1183" height="755" maximized="true" key="dock-window-1" timestamp="1582545341601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
