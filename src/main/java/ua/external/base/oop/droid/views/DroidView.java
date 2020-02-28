@@ -30,6 +30,7 @@ public class DroidView {
         printMessage(
                 resourceManager.getString(Keys.CHOOSE_ACTION) +
                         resourceManager.getString(Keys.ACTION_START_TOURNAMENT) +
+                        resourceManager.getString(Keys.ACTION_DO_BET) +
                         resourceManager.getString(Keys.ACTION_LOGOUT) +
                         resourceManager.getString(Keys.ACTION_EXIT));
     }
@@ -40,6 +41,8 @@ public class DroidView {
                         resourceManager.getString(Keys.ACTION_START_TOURNAMENT) +
                         resourceManager.getString(Keys.ACTION_SEE_ALL_DROIDS) +
                         resourceManager.getString(Keys.ACTION_LOGOUT) +
+                        resourceManager.getString(Keys.ACTION_ADD) +
+                        resourceManager.getString(Keys.ACTION_DELETE) +
                         resourceManager.getString(Keys.ACTION_EXIT));
     }
 
@@ -66,5 +69,14 @@ public class DroidView {
 
     public void printBeforeWePart() {
         printMessage(resourceManager.getString(Keys.BEFORE_WE_PART_KEY));
+    }
+
+    public void printDroidsInfo(ArrayList<Droid> droids){
+        for (int i =0;i<droids.size();i++)
+            printMessage(i+" - "+ droids.get(i).toString() + '\n');
+    }
+
+    public void printMessageByKey(String key) {
+        printMessage(resourceManager.getString(key));
     }
 }

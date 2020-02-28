@@ -9,7 +9,16 @@ public class Keys {
     public static final String ACTION_EXIT ="menu.action.exit";
     public static final String ACTION_START_TOURNAMENT = "user.menu.start.tournament";
     public static final String ACTION_LOGOUT ="user.menu.logout";
+    public static final String ACTION_ADD ="user.menu.add";
+    public static final String ACTION_DELETE ="user.menu.delete";
+    public static final String ACTION_DO_BET ="user.menu.bet";
     public static final String ACTION_SEE_ALL_DROIDS ="user.menu.see.all.droids";
+
+    public static final String OUTPUT_BET_SUCCESS ="menu.bet.success";
+    public static final String OUTPUT_BET_FAIL ="menu.bet.fail";
+    public static final String OUTPUT_BET_CHOOSE ="menu.choose.bet";
+    public static final String OUTPUT_ADD_DROID_CHOOSE ="menu.choose.add";
+    public static final String OUTPUT_DELETE_DROID_CHOOSE ="menu.choose.delete";
 
     public static final String INPUT_LOGIN ="connection.input.login";
     public static final String INPUT_PASSWORD ="connection.input.password";

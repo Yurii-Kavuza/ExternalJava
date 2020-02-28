@@ -17,6 +17,7 @@ import java.util.Scanner;
 
 public class DroidController {
     private ArrayList<Droid> droids;
+    ArrayList<Droid> droidsTournament;
     private Droid droid1;
     private Droid droid2;
     private DroidView view;
@@ -26,6 +27,7 @@ public class DroidController {
     public DroidController(ArrayList<Droid> droids, DroidView view) {
         this.droids = droids;
         this.view = view;
+        droidsTournament = new ArrayList<>(droids.subList(0, 4));
     }
 
     public void startGame() throws IOException {
@@ -53,25 +55,25 @@ public class DroidController {
 
     public void startGameMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        int numOfAction=0;
+        int numOfAction = 0;
 
         view.printStartMenu();
-        while (true){
+        while (true) {
             while (!scanner.hasNextInt()) {
                 view.printStartMenu();
                 scanner.next();
             }
 
             numOfAction = scanner.nextInt();
-            if (numOfAction==1) {
+            if (numOfAction == 1) {
                 user = connection.register();
                 break;
-            }else if (numOfAction==2) {
+            } else if (numOfAction == 2) {
                 user = connection.signIn();
                 break;
-            }else if (numOfAction==0) {
+            } else if (numOfAction == 0) {
                 System.exit(0);
-            }else {
+            } else {
                 view.printStartMenu();
                 continue;
             }
@@ -79,18 +81,17 @@ public class DroidController {
         gameUserMenu();
     }
 
-    public void gameUserMenu() throws IOException{
-        if(user.getRole() == UserRole.USER_ROLE){
+    public void gameUserMenu() throws IOException {
+        if (user.getRole() == UserRole.USER_ROLE) {
             userMenu();
-        }
-        else if(user.getRole() == UserRole.ADMIN_ROLE){
+        } else if (user.getRole() == UserRole.ADMIN_ROLE) {
             adminMenu();
         }
     }
 
-    public void adminMenu() throws IOException{
+    public void adminMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        while (true){
+        while (true) {
             view.printAdminMenu();
 
             while (!scanner.hasNextInt()) {
@@ -99,21 +100,25 @@ public class DroidController {
             }
 
             int numOfAction = scanner.nextInt();
-            if (numOfAction==1) {
+            if (numOfAction == 1) {
                 startTournament();
-            }else if (numOfAction==2) {
-                view.printMessage(getDroidsInfo());
-            }else if (numOfAction==3) {
+            } else if (numOfAction == 2) {
+                view.printDroidsInfo(droids);
+            } else if (numOfAction == 3) {
                 startGameMenu();
-            } else if (numOfAction==0) {
+            } else if (numOfAction == 4) {
+                addDroidInTournament();
+            } else if (numOfAction == 5) {
+                deleteDroidFromTournament();
+            } else if (numOfAction == 0) {
                 System.exit(0);
             }
         }
     }
 
-    public void userMenu() throws IOException{
+    public void userMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        while (true){
+        while (true) {
             view.printUserMenu();
 
             while (!scanner.hasNextInt()) {
@@ -122,28 +127,31 @@ public class DroidController {
             }
 
             int numOfAction = scanner.nextInt();
-            if (numOfAction==1) {
+            if (numOfAction == 1) {
                 startTournament();
-            }else if (numOfAction==2) {
+            } else if (numOfAction == 2) {
+                droidBet();
+            } else if (numOfAction == 3) {
                 startGameMenu();
-            } else if (numOfAction==0) {
+            } else if (numOfAction == 0) {
                 System.exit(0);
             }
         }
     }
 
-    public void startTournament() {
+    public ArrayList<Droid> startTournament() {
+        //ArrayList<Droid> droidsTournament  =  new ArrayList<>(droids);
         view.printGreeting();
-        view.printQuantityOfCompetitors(droids.size());
+        view.printQuantityOfCompetitors(droidsTournament.size());
 
-        while (droids.size() > 1) {
-            int firstCompetitor = (int) (Math.random() * droids.size());
-            droid1 = droids.get(firstCompetitor);
-            droids.remove(firstCompetitor);
+        while (droidsTournament.size() > 1) {
+            int firstCompetitor = (int) (Math.random() * droidsTournament.size());
+            droid1 = droidsTournament.get(firstCompetitor);
+            droidsTournament.remove(firstCompetitor);
 
-            int secondCompetitor = (int) (Math.random() * droids.size());
-            droid2 = droids.get(secondCompetitor);
-            droids.remove(secondCompetitor);
+            int secondCompetitor = (int) (Math.random() * droidsTournament.size());
+            droid2 = droidsTournament.get(secondCompetitor);
+            droidsTournament.remove(secondCompetitor);
 
             view.printCompetitors(droid1, droid2);
 
@@ -151,29 +159,64 @@ public class DroidController {
 
             if (droid1.getAlive() && !droid2.getAlive()) {
                 view.printWinnerOfFight(droid1.getResultAfterFight());
-                droids.add(droid1);
+                droidsTournament.add(droid1);
             } else if (!droid1.getAlive() && droid2.getAlive()) {
                 view.printWinnerOfFight(droid2.getResultAfterFight());
-                droids.add(droid2);
+                droidsTournament.add(droid2);
             } else if (droid1.getAlive() && droid2.getAlive()) {
                 view.printNoWinner(droid1.getResultAfterFight());
-                droids.add(droid1);
-                droids.add(droid2);
+                droidsTournament.add(droid1);
+                droidsTournament.add(droid2);
             }
 
-            if (droids.size() > 1) {
-                view.printQuantityOfCompetitors(droids.size());
+            if (droidsTournament.size() > 1) {
+                view.printQuantityOfCompetitors(droidsTournament.size());
             }
         }
 
-        view.printWinnerOfTournament(droids.get(0));
+        view.printWinnerOfTournament(droidsTournament.get(0));
         view.printBeforeWePart();
+
+        return droidsTournament;
     }
 
-    public String getDroidsInfo() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (Droid droid : droids)
-            stringBuilder.append(droid.toString() + '\n');
-        return stringBuilder.toString();
+    public void droidBet() {
+        view.printMessageByKey(Keys.OUTPUT_BET_CHOOSE);
+        view.printDroidsInfo(droidsTournament);
+
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNextInt()) {
+            int winner = scanner.nextInt();
+            Droid droidWinner = droids.get(winner);
+            ArrayList<Droid> winners = startTournament();
+            if (winners.contains(droidWinner)) {
+                view.printMessageByKey(Keys.OUTPUT_BET_SUCCESS);
+            } else view.printMessageByKey(Keys.OUTPUT_BET_FAIL);
+        }
+    }
+
+    public void addDroidInTournament() {
+        view.printMessageByKey(Keys.OUTPUT_ADD_DROID_CHOOSE);
+        ArrayList<Droid> freeDroids = new ArrayList<>(droids);
+        freeDroids.removeAll(droidsTournament);
+        view.printDroidsInfo(freeDroids);
+
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNextInt()) {
+            int indDroid = scanner.nextInt();
+            Droid droid = freeDroids.get(indDroid);
+            droidsTournament.add(droid);
+        }
+    }
+
+    public void deleteDroidFromTournament() {
+        view.printMessageByKey(Keys.OUTPUT_DELETE_DROID_CHOOSE);
+        view.printDroidsInfo(droidsTournament);
+
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNextInt()) {
+            int droid = scanner.nextInt();
+            droidsTournament.remove(droidsTournament.get(droid));
+        }
     }
 }
