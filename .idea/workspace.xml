@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/property/messages_ua_UA.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/property/messages_ua_UA.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/controllers/DroidController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/AthleteDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/AthleteDroid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Droids/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,81 +20,226 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        <entry file="uml://JAVA/ua.external.base.oop.droid.controllers.DroidController">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>ua.external.base.oop.droid.controllers.DroidController</OriginalElement>
+              <nodes>
+                <node x="176.375" y="178.0">ua.external.base.oop.droid.droids.FlightDroid</node>
+                <node x="428.75" y="415.0">ua.external.base.oop.droid.droids.behavior.EnergyBehavior</node>
+                <node x="0.0" y="568.0">ua.external.base.oop.droid.droids.engine.EngineType</node>
+                <node x="1107.0" y="415.0">ua.external.base.oop.droid.controllers.DroidController</node>
+                <node x="900.0" y="415.0">ua.external.base.oop.droid.serialization.DroidsSerialization</node>
+                <node x="378.0" y="494.0">ua.external.base.oop.droid.droids.behavior.NoEnergy</node>
+                <node x="706.3671875" y="178.0">ua.external.base.oop.droid.droids.SelfHealingDroid</node>
+                <node x="311.375" y="178.0">ua.external.base.oop.droid.droids.DoublePowerDroid</node>
+                <node x="816.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.DoctorDroidFactory</node>
+                <node x="789.0" y="568.0">ua.external.base.oop.droid.session.users.User</node>
+                <node x="1234.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.KillerDroidFactory</node>
+                <node x="38.25" y="89.0">ua.external.base.oop.droid.droids.HouseworkerDroid</node>
+                <node x="135.0" y="494.0">ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon</node>
+                <node x="1005.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.HouseworkerDroidFactory</node>
+                <node x="409.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.SelfHealingDroidFactory</node>
+                <node x="336.0" y="568.0">ua.external.base.oop.droid.DroidsWar</node>
+                <node x="228.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.FlightDroidFactory</node>
+                <node x="641.0" y="568.0">ua.external.base.oop.droid.session.users.UserRole</node>
+                <node x="625.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.AthleteDroidFactory</node>
+                <node x="259.3046875" y="0.0">ua.external.base.oop.droid.droids.Droid</node>
+                <node x="507.0" y="494.0">ua.external.base.oop.droid.droids.behavior.EnergyUsual</node>
+                <node x="0.0" y="178.0">ua.external.base.oop.droid.droids.KillerDroid</node>
+                <node x="165.0" y="568.0">ua.external.base.oop.droid.droids.droidfactory.DroidMaker</node>
+                <node x="678.0" y="415.0">ua.external.base.oop.droid.serialization.DroidsDeserialization</node>
+                <node x="70.25" y="415.0">ua.external.base.oop.droid.droids.behavior.DamageBehavior</node>
+                <node x="0.0" y="494.0">ua.external.base.oop.droid.droids.behavior.NoDamage</node>
+                <node x="647.0" y="252.0">ua.external.base.oop.droid.droids.droidfactory.DroidFactory</node>
+                <node x="616.78125" y="0.0">ua.external.base.oop.droid.droids.behavior.Diveable</node>
+                <node x="656.78125" y="89.0">ua.external.base.oop.droid.droids.behavior.Repairable</node>
+                <node x="493.375" y="178.0">ua.external.base.oop.droid.droids.DoctorDroid</node>
+                <node x="486.0" y="568.0">ua.external.base.oop.droid.views.DroidView</node>
+                <node x="477.4921875" y="89.0">ua.external.base.oop.droid.droids.AthleteDroid</node>
+                <node x="0.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.DoublePowerDroidFactory</node>
+                <node x="279.5546875" y="89.0">ua.external.base.oop.droid.droids.behavior.Flyable</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.Droid">
+                  <point x="-15.375" y="-14.5" />
+                  <point x="539.5" y="138.0" />
+                  <point x="466.9921875" y="138.0" />
+                  <point x="466.9921875" y="69.0" />
+                  <point x="306.5546875" y="69.0" />
+                  <point x="6.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.FlightDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+                  <point x="28.75" y="-14.5" />
+                  <point x="262.625" y="158.0" />
+                  <point x="313.3046875" y="158.0" />
+                  <point x="-11.25" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.HouseworkerDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="1109.5" y="311.0" />
+                  <point x="746.7857142857142" y="311.0" />
+                  <point x="36.28571428571422" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.FlightDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="308.5" y="311.0" />
+                  <point x="674.2142857142857" y="311.0" />
+                  <point x="-36.285714285714334" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.FlightDroid" target="ua.external.base.oop.droid.droids.Droid">
+                  <point x="-28.75" y="-14.5" />
+                  <point x="205.125" y="138.0" />
+                  <point x="211.75" y="138.0" />
+                  <point x="211.75" y="69.0" />
+                  <point x="293.0546875" y="69.0" />
+                  <point x="-6.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+                  <point x="-46.125" y="-14.5" />
+                  <point x="508.75" y="148.0" />
+                  <point x="358.3046875" y="148.0" />
+                  <point x="33.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.behavior.Repairable">
+                  <point x="46.125" y="-14.5" />
+                  <point x="601.0" y="158.0" />
+                  <point x="684.53125" y="158.0" />
+                  <point x="-27.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.behavior.Diveable">
+                  <point x="15.375" y="-14.5" />
+                  <point x="570.25" y="148.0" />
+                  <point x="641.4296875" y="148.0" />
+                  <point x="641.4296875" y="69.0" />
+                  <point x="691.03125" y="69.0" />
+                  <point x="24.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.KillerDroid" target="ua.external.base.oop.droid.droids.Droid">
+                  <point x="-27.75" y="-14.5" />
+                  <point x="27.75" y="49.0" />
+                  <point x="266.0546875" y="49.0" />
+                  <point x="-33.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.SelfHealingDroid" target="ua.external.base.oop.droid.droids.behavior.Repairable">
+                  <point x="-37.5" y="-14.5" />
+                  <point x="743.8671875" y="158.0" />
+                  <point x="740.03125" y="158.0" />
+                  <point x="27.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.KillerDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+                  <point x="27.75" y="-14.5" />
+                  <point x="83.25" y="148.0" />
+                  <point x="290.8046875" y="148.0" />
+                  <point x="-33.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.DoublePowerDroid" target="ua.external.base.oop.droid.droids.AthleteDroid">
+                  <point x="40.5" y="-14.5" />
+                  <point x="432.875" y="158.0" />
+                  <point x="539.9921875" y="158.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.SelfHealingDroid" target="ua.external.base.oop.droid.droids.Droid">
+                  <point x="37.5" y="-14.5" />
+                  <point x="818.8671875" y="158.0" />
+                  <point x="800.4921875" y="158.0" />
+                  <point x="800.4921875" y="49.0" />
+                  <point x="333.5546875" y="49.0" />
+                  <point x="33.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.DoublePowerDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+                  <point x="-40.5" y="-14.5" />
+                  <point x="351.875" y="158.0" />
+                  <point x="335.8046875" y="158.0" />
+                  <point x="11.25" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.HouseworkerDroid" target="ua.external.base.oop.droid.droids.Droid">
+                  <point x="0.0" y="-14.5" />
+                  <point x="119.75" y="59.0" />
+                  <point x="279.5546875" y="59.0" />
+                  <point x="-20.25" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.SelfHealingDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="507.0" y="321.0" />
+                  <point x="692.3571428571429" y="321.0" />
+                  <point x="-18.14285714285711" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.AthleteDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon" target="ua.external.base.oop.droid.droids.behavior.DamageBehavior">
+                  <point x="0.0" y="-14.5" />
+                  <point x="234.0" y="469.0" />
+                  <point x="183.5" y="469.0" />
+                  <point x="37.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.DoctorDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="900.5" y="321.0" />
+                  <point x="728.6428571428571" y="321.0" />
+                  <point x="18.14285714285711" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.KillerDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="1312.5" y="301.0" />
+                  <point x="764.9285714285714" y="301.0" />
+                  <point x="54.428571428571445" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.AthleteDroid" target="ua.external.base.oop.droid.droids.Droid">
+                  <point x="-31.25" y="-14.5" />
+                  <point x="508.7421875" y="59.0" />
+                  <point x="320.0546875" y="59.0" />
+                  <point x="20.25" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.behavior.NoEnergy" target="ua.external.base.oop.droid.droids.behavior.EnergyBehavior">
+                  <point x="0.0" y="-14.5" />
+                  <point x="432.5" y="469.0" />
+                  <point x="465.0" y="469.0" />
+                  <point x="-36.25" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.behavior.EnergyUsual" target="ua.external.base.oop.droid.droids.behavior.EnergyBehavior">
+                  <point x="0.0" y="-14.5" />
+                  <point x="570.0" y="469.0" />
+                  <point x="537.5" y="469.0" />
+                  <point x="36.25" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.droidfactory.DoublePowerDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="104.0" y="301.0" />
+                  <point x="656.0714285714286" y="301.0" />
+                  <point x="-54.428571428571445" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.behavior.NoDamage" target="ua.external.base.oop.droid.droids.behavior.DamageBehavior">
+                  <point x="0.0" y="-14.5" />
+                  <point x="57.5" y="469.0" />
+                  <point x="108.0" y="469.0" />
+                  <point x="-37.75" y="14.5" />
+                </edge>
+                <edge source="ua.external.base.oop.droid.droids.AthleteDroid" target="ua.external.base.oop.droid.droids.behavior.Diveable">
+                  <point x="31.25" y="-14.5" />
+                  <point x="571.2421875" y="59.0" />
+                  <point x="641.53125" y="59.0" />
+                  <point x="-24.75" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6310738857403679" x="362.3041219467274" y="323.3041219467274" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="235" column="105" lean-forward="true" selection-start-line="235" selection-start-column="105" selection-end-line="235" selection-end-column="105" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#chooseLanguage#0;class#DroidController#0" />
-                <element signature="method#startGameMenu#0;class#DroidController#0" />
-                <element signature="method#gameUserMenu#0;class#DroidController#0" />
-                <element signature="method#adminMenu#0;class#DroidController#0" />
-                <element signature="method#userMenu#0;class#DroidController#0" />
-                <element signature="method#startTournament#0;class#DroidController#0" />
-                <element signature="method#droidBet#0;class#DroidController#0" />
-                <element signature="method#addDroidInTournament#0;class#DroidController#0" />
-                <element signature="method#deleteDroidFromTournament#0;class#DroidController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/users.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="10" selection-start-line="2" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-              <folding>
-                <element signature="method#printStartMenu#0;class#DroidView#0" />
-                <element signature="method#printUserMenu#0;class#DroidView#0" />
-                <element signature="method#printAdminMenu#0;class#DroidView#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="109" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="109" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/usualUsers.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -128,20 +268,20 @@
         <option value="$PROJECT_DIR$/src/main/resources/additionalData/adminUsers.csv" />
         <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UserRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" />
         <option value="$PROJECT_DIR$/src/main/resources/additionalData/users.csv" />
         <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/menu/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
+    <option name="x" value="23" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="734" />
@@ -194,14 +334,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ExternalJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExternalJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -218,7 +350,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582898074310" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582901112223" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -285,15 +417,16 @@
       <workItem from="1582712344557" duration="9891000" />
       <workItem from="1582880209103" duration="121000" />
       <workItem from="1582880378732" duration="4939000" />
-      <workItem from="1582895660869" duration="2020000" />
+      <workItem from="1582895660869" duration="4687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25220000" />
+    <option name="totallyTimeSpent" value="27887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="23" width="1280" height="734" extended-state="0" />
+    <frame x="23" y="23" width="1280" height="734" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49537036" visible="true" weight="0.26979" />
       <window_info id="Structure" order="1" sideWeight="0.5046296" side_tool="true" weight="0.2657512" />
@@ -304,7 +437,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3271028" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3271028" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,18 +569,6 @@
     <state x="403" y="164" key="run.anything.popup/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582535964555" />
     <state x="1862" y="237" key="run.anything.popup/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582479934757" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/UsualUser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/AdminUser.java" />
@@ -465,38 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/ResourceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/adminUsers.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="method#register#0;class#Connection#0" />
-            <element signature="method#isLoginExist#0;class#Connection#0" />
-            <element signature="method#saveUser#0;class#Connection#0" />
-            <element signature="method#signIn#0;class#Connection#0" />
-            <element signature="method#isUserPresent#0;class#Connection#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,13 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -545,30 +631,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="135">
+          <caret line="9" column="109" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="109" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/users.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" selection-start-line="2" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="method#DroidController#0;class#DroidController#0" />
+            <element signature="method#startGame#0;class#DroidController#0" />
+            <element signature="method#chooseLanguage#0;class#DroidController#0" />
+            <element signature="method#startGameMenu#0;class#DroidController#0" />
+            <element signature="method#gameUserMenu#0;class#DroidController#0" />
+            <element signature="method#adminMenu#0;class#DroidController#0" />
+            <element signature="method#userMenu#0;class#DroidController#0" />
+            <element signature="method#startTournament#0;class#DroidController#0" />
+            <element signature="method#droidBet#0;class#DroidController#0" />
+            <element signature="method#addDroidInTournament#0;class#DroidController#0" />
+            <element signature="method#deleteDroidFromTournament#0;class#DroidController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/views/DroidView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="15">
           <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
           <folding>
             <element signature="method#printStartMenu#0;class#DroidView#0" />
@@ -585,29 +680,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="109" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="109" />
+        <state relative-caret-position="180">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="235" column="105" lean-forward="true" selection-start-line="235" selection-start-column="105" selection-end-line="235" selection-end-column="105" />
+        <state relative-caret-position="285">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+          <folding>
+            <element signature="method#register#0;class#Connection#0" />
+            <element signature="method#isLoginExist#0;class#Connection#0" />
+            <element signature="method#saveUser#0;class#Connection#0" />
+            <element signature="method#signIn#0;class#Connection#0" />
+            <element signature="method#isUserPresent#0;class#Connection#0" />
+            <element signature="method#getLoggerMessage#0;class#Connection#0" />
+            <element signature="method#getLoggerMessage#1;class#Connection#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/additionalData/users.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/ResourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#chooseLanguage#0;class#DroidController#0" />
-            <element signature="method#startGameMenu#0;class#DroidController#0" />
-            <element signature="method#gameUserMenu#0;class#DroidController#0" />
-            <element signature="method#adminMenu#0;class#DroidController#0" />
-            <element signature="method#userMenu#0;class#DroidController#0" />
-            <element signature="method#startTournament#0;class#DroidController#0" />
-            <element signature="method#droidBet#0;class#DroidController#0" />
-            <element signature="method#addDroidInTournament#0;class#DroidController#0" />
-            <element signature="method#deleteDroidFromTournament#0;class#DroidController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ua.external.base.oop.droid.session">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ua.external.base.oop.droid.session</OriginalElement>
+          <nodes>
+            <node x="" y="">ua.external.base.oop.droid.session.users</node>
+            <node x="" y="">ua.external.base.oop.droid.session.menu</node>
+            <node x="" y="">ua.external.base.oop.droid.session.Connection</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="60.5" y="88.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ua.external.base.oop.droid.controllers.DroidController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ua.external.base.oop.droid.controllers.DroidController</OriginalElement>
+          <nodes>
+            <node x="176.375" y="178.0">ua.external.base.oop.droid.droids.FlightDroid</node>
+            <node x="428.75" y="415.0">ua.external.base.oop.droid.droids.behavior.EnergyBehavior</node>
+            <node x="0.0" y="568.0">ua.external.base.oop.droid.droids.engine.EngineType</node>
+            <node x="1107.0" y="415.0">ua.external.base.oop.droid.controllers.DroidController</node>
+            <node x="900.0" y="415.0">ua.external.base.oop.droid.serialization.DroidsSerialization</node>
+            <node x="378.0" y="494.0">ua.external.base.oop.droid.droids.behavior.NoEnergy</node>
+            <node x="706.3671875" y="178.0">ua.external.base.oop.droid.droids.SelfHealingDroid</node>
+            <node x="311.375" y="178.0">ua.external.base.oop.droid.droids.DoublePowerDroid</node>
+            <node x="816.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.DoctorDroidFactory</node>
+            <node x="789.0" y="568.0">ua.external.base.oop.droid.session.users.User</node>
+            <node x="1234.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.KillerDroidFactory</node>
+            <node x="38.25" y="89.0">ua.external.base.oop.droid.droids.HouseworkerDroid</node>
+            <node x="135.0" y="494.0">ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon</node>
+            <node x="1005.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.HouseworkerDroidFactory</node>
+            <node x="409.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.SelfHealingDroidFactory</node>
+            <node x="336.0" y="568.0">ua.external.base.oop.droid.DroidsWar</node>
+            <node x="228.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.FlightDroidFactory</node>
+            <node x="641.0" y="568.0">ua.external.base.oop.droid.session.users.UserRole</node>
+            <node x="625.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.AthleteDroidFactory</node>
+            <node x="259.3046875" y="0.0">ua.external.base.oop.droid.droids.Droid</node>
+            <node x="507.0" y="494.0">ua.external.base.oop.droid.droids.behavior.EnergyUsual</node>
+            <node x="0.0" y="178.0">ua.external.base.oop.droid.droids.KillerDroid</node>
+            <node x="165.0" y="568.0">ua.external.base.oop.droid.droids.droidfactory.DroidMaker</node>
+            <node x="678.0" y="415.0">ua.external.base.oop.droid.serialization.DroidsDeserialization</node>
+            <node x="70.25" y="415.0">ua.external.base.oop.droid.droids.behavior.DamageBehavior</node>
+            <node x="0.0" y="494.0">ua.external.base.oop.droid.droids.behavior.NoDamage</node>
+            <node x="647.0" y="252.0">ua.external.base.oop.droid.droids.droidfactory.DroidFactory</node>
+            <node x="616.78125" y="0.0">ua.external.base.oop.droid.droids.behavior.Diveable</node>
+            <node x="656.78125" y="89.0">ua.external.base.oop.droid.droids.behavior.Repairable</node>
+            <node x="493.375" y="178.0">ua.external.base.oop.droid.droids.DoctorDroid</node>
+            <node x="486.0" y="568.0">ua.external.base.oop.droid.views.DroidView</node>
+            <node x="477.4921875" y="89.0">ua.external.base.oop.droid.droids.AthleteDroid</node>
+            <node x="0.0" y="341.0">ua.external.base.oop.droid.droids.droidfactory.DoublePowerDroidFactory</node>
+            <node x="279.5546875" y="89.0">ua.external.base.oop.droid.droids.behavior.Flyable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.Droid">
+              <point x="-15.375" y="-14.5" />
+              <point x="539.5" y="138.0" />
+              <point x="466.9921875" y="138.0" />
+              <point x="466.9921875" y="69.0" />
+              <point x="306.5546875" y="69.0" />
+              <point x="6.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.FlightDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+              <point x="28.75" y="-14.5" />
+              <point x="262.625" y="158.0" />
+              <point x="313.3046875" y="158.0" />
+              <point x="-11.25" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.HouseworkerDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="1109.5" y="311.0" />
+              <point x="746.7857142857142" y="311.0" />
+              <point x="36.28571428571422" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.FlightDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="308.5" y="311.0" />
+              <point x="674.2142857142857" y="311.0" />
+              <point x="-36.285714285714334" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.FlightDroid" target="ua.external.base.oop.droid.droids.Droid">
+              <point x="-28.75" y="-14.5" />
+              <point x="205.125" y="138.0" />
+              <point x="211.75" y="138.0" />
+              <point x="211.75" y="69.0" />
+              <point x="293.0546875" y="69.0" />
+              <point x="-6.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+              <point x="-46.125" y="-14.5" />
+              <point x="508.75" y="148.0" />
+              <point x="358.3046875" y="148.0" />
+              <point x="33.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.behavior.Repairable">
+              <point x="46.125" y="-14.5" />
+              <point x="601.0" y="158.0" />
+              <point x="684.53125" y="158.0" />
+              <point x="-27.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.DoctorDroid" target="ua.external.base.oop.droid.droids.behavior.Diveable">
+              <point x="15.375" y="-14.5" />
+              <point x="570.25" y="148.0" />
+              <point x="641.4296875" y="148.0" />
+              <point x="641.4296875" y="69.0" />
+              <point x="691.03125" y="69.0" />
+              <point x="24.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.KillerDroid" target="ua.external.base.oop.droid.droids.Droid">
+              <point x="-27.75" y="-14.5" />
+              <point x="27.75" y="49.0" />
+              <point x="266.0546875" y="49.0" />
+              <point x="-33.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.SelfHealingDroid" target="ua.external.base.oop.droid.droids.behavior.Repairable">
+              <point x="-37.5" y="-14.5" />
+              <point x="743.8671875" y="158.0" />
+              <point x="740.03125" y="158.0" />
+              <point x="27.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.KillerDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+              <point x="27.75" y="-14.5" />
+              <point x="83.25" y="148.0" />
+              <point x="290.8046875" y="148.0" />
+              <point x="-33.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.DoublePowerDroid" target="ua.external.base.oop.droid.droids.AthleteDroid">
+              <point x="40.5" y="-14.5" />
+              <point x="432.875" y="158.0" />
+              <point x="539.9921875" y="158.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.SelfHealingDroid" target="ua.external.base.oop.droid.droids.Droid">
+              <point x="37.5" y="-14.5" />
+              <point x="818.8671875" y="158.0" />
+              <point x="800.4921875" y="158.0" />
+              <point x="800.4921875" y="49.0" />
+              <point x="333.5546875" y="49.0" />
+              <point x="33.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.DoublePowerDroid" target="ua.external.base.oop.droid.droids.behavior.Flyable">
+              <point x="-40.5" y="-14.5" />
+              <point x="351.875" y="158.0" />
+              <point x="335.8046875" y="158.0" />
+              <point x="11.25" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.HouseworkerDroid" target="ua.external.base.oop.droid.droids.Droid">
+              <point x="0.0" y="-14.5" />
+              <point x="119.75" y="59.0" />
+              <point x="279.5546875" y="59.0" />
+              <point x="-20.25" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.SelfHealingDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="507.0" y="321.0" />
+              <point x="692.3571428571429" y="321.0" />
+              <point x="-18.14285714285711" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.AthleteDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon" target="ua.external.base.oop.droid.droids.behavior.DamageBehavior">
+              <point x="0.0" y="-14.5" />
+              <point x="234.0" y="469.0" />
+              <point x="183.5" y="469.0" />
+              <point x="37.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.DoctorDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="900.5" y="321.0" />
+              <point x="728.6428571428571" y="321.0" />
+              <point x="18.14285714285711" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.KillerDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="1312.5" y="301.0" />
+              <point x="764.9285714285714" y="301.0" />
+              <point x="54.428571428571445" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.AthleteDroid" target="ua.external.base.oop.droid.droids.Droid">
+              <point x="-31.25" y="-14.5" />
+              <point x="508.7421875" y="59.0" />
+              <point x="320.0546875" y="59.0" />
+              <point x="20.25" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.behavior.NoEnergy" target="ua.external.base.oop.droid.droids.behavior.EnergyBehavior">
+              <point x="0.0" y="-14.5" />
+              <point x="432.5" y="469.0" />
+              <point x="465.0" y="469.0" />
+              <point x="-36.25" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.behavior.EnergyUsual" target="ua.external.base.oop.droid.droids.behavior.EnergyBehavior">
+              <point x="0.0" y="-14.5" />
+              <point x="570.0" y="469.0" />
+              <point x="537.5" y="469.0" />
+              <point x="36.25" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.droidfactory.DoublePowerDroidFactory" target="ua.external.base.oop.droid.droids.droidfactory.DroidFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="104.0" y="301.0" />
+              <point x="656.0714285714286" y="301.0" />
+              <point x="-54.428571428571445" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.behavior.NoDamage" target="ua.external.base.oop.droid.droids.behavior.DamageBehavior">
+              <point x="0.0" y="-14.5" />
+              <point x="57.5" y="469.0" />
+              <point x="108.0" y="469.0" />
+              <point x="-37.75" y="14.5" />
+            </edge>
+            <edge source="ua.external.base.oop.droid.droids.AthleteDroid" target="ua.external.base.oop.droid.droids.behavior.Diveable">
+              <point x="31.25" y="-14.5" />
+              <point x="571.2421875" y="59.0" />
+              <point x="641.53125" y="59.0" />
+              <point x="-24.75" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6310738857403679" x="362.3041219467274" y="323.3041219467274" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>

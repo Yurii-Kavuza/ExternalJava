@@ -11,10 +11,7 @@ import ua.external.base.oop.droid.views.DroidView;
 
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class DroidController {
@@ -33,9 +30,6 @@ public class DroidController {
     }
 
     public void startGame() throws IOException {
-        view.printDroidsInfo(sortDroidsByHealth());
-        view.printMessage("\n");
-        view.printDroidsInfo(findDroidsByFirstLetterName('P'));
         chooseLanguage();
         startGameMenu();
     }
@@ -225,15 +219,14 @@ public class DroidController {
         }
     }
 
-    public ArrayList<Droid> sortDroidsByHealth(){
+    public ArrayList<Droid> sortDroidsByHealth() {
         ArrayList<Droid> result = new ArrayList<>(droids);
-        result.sort((o1,o2)->o1.getHealth()-o2.getHealth());
+        result.sort((o1, o2) -> o1.getHealth() - o2.getHealth());
         return result;
     }
 
-    public ArrayList<Droid> findDroidsByFirstLetterName(char letter){
-        ArrayList<Droid> result = new ArrayList<>(droids);
-        result.stream().filter(x -> x.getName().matches("/^["+letter+"]/")).collect(Collectors.toList());
+    public List<Droid> findDroidsByFirstLetterName(String letter) {
+        List<Droid> result = droids.stream().filter(x -> x.getName().startsWith(letter)).collect(Collectors.toList());
         return result;
     }
 }

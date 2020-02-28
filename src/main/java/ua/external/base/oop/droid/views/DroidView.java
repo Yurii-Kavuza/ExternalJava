@@ -71,9 +71,9 @@ public class DroidView {
         printMessage(resourceManager.getString(Keys.BEFORE_WE_PART_KEY));
     }
 
-    public void printDroidsInfo(ArrayList<Droid> droids){
-        for (int i =0;i<droids.size();i++)
-            printMessage(i+" - "+ droids.get(i).toString() + '\n');
+    public void printDroidsInfo(ArrayList<Droid> droids) {
+        for (int i = 0; i < droids.size(); i++)
+            printMessage(i + " - " + droids.get(i).toString() + '\n');
     }
 
     public void printMessageByKey(String key) {

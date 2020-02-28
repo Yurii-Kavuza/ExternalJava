@@ -2,26 +2,26 @@ package ua.external.base.oop.droid.resource;
 
 public class Keys {
     public static final String CHOOSE_LANG = "Hi! Dear user, please, choose the language:\n1 - ua;\n2-us (default);";
-    public static final String ACTION_WELCOME ="menu.welcome";
-    public static final String CHOOSE_ACTION ="menu.choose.action";
-    public static final String ACTION_SIGN_UP ="start.menu.action.sign.up";
-    public static final String ACTION_SIGN_IN ="start.menu.action.sign.in";
-    public static final String ACTION_EXIT ="menu.action.exit";
+    public static final String ACTION_WELCOME = "menu.welcome";
+    public static final String CHOOSE_ACTION = "menu.choose.action";
+    public static final String ACTION_SIGN_UP = "start.menu.action.sign.up";
+    public static final String ACTION_SIGN_IN = "start.menu.action.sign.in";
+    public static final String ACTION_EXIT = "menu.action.exit";
     public static final String ACTION_START_TOURNAMENT = "user.menu.start.tournament";
-    public static final String ACTION_LOGOUT ="user.menu.logout";
-    public static final String ACTION_ADD ="user.menu.add";
-    public static final String ACTION_DELETE ="user.menu.delete";
-    public static final String ACTION_DO_BET ="user.menu.bet";
-    public static final String ACTION_SEE_ALL_DROIDS ="user.menu.see.all.droids";
+    public static final String ACTION_LOGOUT = "user.menu.logout";
+    public static final String ACTION_ADD = "user.menu.add";
+    public static final String ACTION_DELETE = "user.menu.delete";
+    public static final String ACTION_DO_BET = "user.menu.bet";
+    public static final String ACTION_SEE_ALL_DROIDS = "user.menu.see.all.droids";
 
-    public static final String OUTPUT_BET_SUCCESS ="menu.bet.success";
-    public static final String OUTPUT_BET_FAIL ="menu.bet.fail";
-    public static final String OUTPUT_BET_CHOOSE ="menu.choose.bet";
-    public static final String OUTPUT_ADD_DROID_CHOOSE ="menu.choose.add";
-    public static final String OUTPUT_DELETE_DROID_CHOOSE ="menu.choose.delete";
+    public static final String OUTPUT_BET_SUCCESS = "menu.bet.success";
+    public static final String OUTPUT_BET_FAIL = "menu.bet.fail";
+    public static final String OUTPUT_BET_CHOOSE = "menu.choose.bet";
+    public static final String OUTPUT_ADD_DROID_CHOOSE = "menu.choose.add";
+    public static final String OUTPUT_DELETE_DROID_CHOOSE = "menu.choose.delete";
 
-    public static final String INPUT_LOGIN ="connection.input.login";
-    public static final String INPUT_PASSWORD ="connection.input.password";
+    public static final String INPUT_LOGIN = "connection.input.login";
+    public static final String INPUT_PASSWORD = "connection.input.password";
     public static final String INPUT_LOGIN_INCORRECT = "connection.input.login.incorrect";
     public static final String INPUT_PASSWORD_INCORRECT = "connection.input.password.incorrect";
     public static final String INPUT_USER_INCORRECT = "connection.input.user.incorrect";
@@ -51,7 +51,6 @@ public class Keys {
     public static final String MAKING_KEY = "droid.input.making";
     public static final String ATTEMPTS_KEY = "droid.input.attempts";
     public static final String NOBODY_WON_KEY = "droid.input.nobody.won";
-
 
 
 }
