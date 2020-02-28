@@ -1,6 +1,7 @@
 package ua.external.base.oop.droid.session;
 
 import org.apache.log4j.Logger;
+import ua.external.base.oop.droid.exceptions.PassDoesNotMatchesPatternException;
 import ua.external.base.oop.droid.exceptions.WrongInputLoginByRegistrationException;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
@@ -13,12 +14,11 @@ public class Connection {
     ResourceManager resourceManager = ResourceManager.INSTANCE;
 
     private String sourcePathUsers = "src/main/resources/additionalData/users.csv";
-
     private final static Logger logger = Logger.getLogger(Connection.class);
 
     public User register() throws IOException {
         String inputLogin = null;
-        String inputPass;
+        String inputPass = null;
 
         System.out.println(resourceManager.getString(Keys.INPUT_SIGN_UP));
 
@@ -39,13 +39,19 @@ public class Connection {
         }
 
         for (; ; ) {
-            System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD));
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            inputPass = bufferedReader.readLine();
-            if (isPassCorrect(inputPass)) {
-                break;
+            try{
+                System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD));
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+                inputPass = bufferedReader.readLine();
+                if (isPassCorrect(inputPass)) {
+                    break;
+                }else {
+                    throw new PassDoesNotMatchesPatternException();
+                }
+            }catch(IOException e){
+                System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD_INCORRECT));
+                logger.info(getLoggerMessage(e,inputLogin,inputPass));
             }
-            System.out.println(resourceManager.getString(Keys.INPUT_PASSWORD_INCORRECT));
         }
 
         User user = new User(inputLogin, inputPass, UserRole.USER_ROLE);
@@ -87,6 +93,8 @@ public class Connection {
             PrintWriter out = new PrintWriter(bw))
         {
             out.println(user.getLogin()+";"+user.getPassword()+";"+user.getRole());
+        }catch (IOException e){
+            logger.info(e.toString());
         }
     }
 
@@ -133,6 +141,15 @@ public class Connection {
         StringBuilder sb= new StringBuilder(e.getClass().getSimpleName());
         sb.append(" ");
         sb.append(inputValue);
+        return sb.toString();
+    }
+
+    private String getLoggerMessage(IOException e, String login, String pass){
+        StringBuilder sb= new StringBuilder(e.getClass().getSimpleName());
+        sb.append(" ");
+        sb.append(login);
+        sb.append(" ");
+        sb.append(pass);
         return sb.toString();
     }
 
