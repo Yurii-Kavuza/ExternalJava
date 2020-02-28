@@ -1,31 +1,41 @@
 package ua.external.base.oop.droid.session;
 
+import org.apache.log4j.Logger;
+import ua.external.base.oop.droid.exceptions.WrongInputLoginByRegistrationException;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 import ua.external.base.oop.droid.session.users.User;
 import ua.external.base.oop.droid.session.users.UserRole;
-
 import java.io.*;
+
 
 public class Connection {
     ResourceManager resourceManager = ResourceManager.INSTANCE;
 
     private String sourcePathUsers = "src/main/resources/additionalData/users.csv";
 
+    private final static Logger logger = Logger.getLogger(Connection.class);
+
     public User register() throws IOException {
-        String inputLogin;
+        String inputLogin = null;
         String inputPass;
 
         System.out.println(resourceManager.getString(Keys.INPUT_SIGN_UP));
 
         for (; ; ) {
-            System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            inputLogin = bufferedReader.readLine();
-            if (isLoginCorrect(inputLogin) && !isLoginExist(inputLogin)) {
-                break;
+            try{
+                System.out.println(resourceManager.getString(Keys.INPUT_LOGIN));
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+                inputLogin = bufferedReader.readLine();
+                if (isLoginCorrect(inputLogin) && !isLoginExist(inputLogin)) {
+                    break;
+                }else {
+                    throw new WrongInputLoginByRegistrationException();
+                }
+            }catch (IOException e){
+                System.out.println(resourceManager.getString(Keys.INPUT_LOGIN_INCORRECT));
+                logger.info(getLoggerMessage(e,inputLogin));
             }
-            System.out.println(resourceManager.getString(Keys.INPUT_LOGIN_INCORRECT));
         }
 
         for (; ; ) {
@@ -117,6 +127,13 @@ public class Connection {
             System.out.println(resourceManager.getString(Keys.INPUT_USER_INCORRECT));
             return null;
         }
+    }
+
+    private String getLoggerMessage(IOException e, String inputValue){
+        StringBuilder sb= new StringBuilder(e.getClass().getSimpleName());
+        sb.append(" ");
+        sb.append(inputValue);
+        return sb.toString();
     }
 
 }
