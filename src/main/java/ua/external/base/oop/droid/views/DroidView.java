@@ -4,6 +4,8 @@ import ua.external.base.oop.droid.droids.Droid;
 import ua.external.base.oop.droid.resource.Keys;
 import ua.external.base.oop.droid.resource.ResourceManager;
 
+import java.util.ArrayList;
+
 public class DroidView {
     private ResourceManager resourceManager = ResourceManager.INSTANCE;
 
