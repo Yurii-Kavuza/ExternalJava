@@ -139,18 +139,18 @@ public class DroidController {
     }
 
     public ArrayList<Droid> startTournament() {
-        //ArrayList<Droid> droidsTournament  =  new ArrayList<>(droids);
+        ArrayList<Droid> droidsforThisTournament  =  new ArrayList<>(droidsTournament);
         view.printGreeting();
-        view.printQuantityOfCompetitors(droidsTournament.size());
+        view.printQuantityOfCompetitors(droidsforThisTournament.size());
 
-        while (droidsTournament.size() > 1) {
-            int firstCompetitor = (int) (Math.random() * droidsTournament.size());
-            droid1 = droidsTournament.get(firstCompetitor);
-            droidsTournament.remove(firstCompetitor);
+        while (droidsforThisTournament.size() > 1) {
+            int firstCompetitor = (int) (Math.random() * droidsforThisTournament.size());
+            droid1 = droidsforThisTournament.get(firstCompetitor);
+            droidsforThisTournament.remove(firstCompetitor);
 
-            int secondCompetitor = (int) (Math.random() * droidsTournament.size());
-            droid2 = droidsTournament.get(secondCompetitor);
-            droidsTournament.remove(secondCompetitor);
+            int secondCompetitor = (int) (Math.random() * droidsforThisTournament.size());
+            droid2 = droidsforThisTournament.get(secondCompetitor);
+            droidsforThisTournament.remove(secondCompetitor);
 
             view.printCompetitors(droid1, droid2);
 
@@ -158,14 +158,14 @@ public class DroidController {
 
             if (droid1.getAlive() && !droid2.getAlive()) {
                 view.printWinnerOfFight(droid1.getResultAfterFight());
-                droidsTournament.add(droid1);
+                droidsforThisTournament.add(droid1);
             } else if (!droid1.getAlive() && droid2.getAlive()) {
                 view.printWinnerOfFight(droid2.getResultAfterFight());
-                droidsTournament.add(droid2);
+                droidsforThisTournament.add(droid2);
             } else if (droid1.getAlive() && droid2.getAlive()) {
                 view.printNoWinner(droid1.getResultAfterFight());
-                droidsTournament.add(droid1);
-                droidsTournament.add(droid2);
+                droidsforThisTournament.add(droid1);
+                droidsforThisTournament.add(droid2);
             }
 
             if (droidsTournament.size() > 1) {
