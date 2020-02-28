@@ -2,8 +2,9 @@ package ua.external.base.oop.droid.droids;
 
 import ua.external.base.oop.droid.droids.behavior.DamageWithoutWeapon;
 import ua.external.base.oop.droid.droids.behavior.EnergyUsual;
+import ua.external.base.oop.droid.droids.behavior.Flyable;
 
-public class KillerDroid extends Droid
+public class KillerDroid extends Droid implements Flyable
 {
 	// extra damage to kill another droid
 	int extraDamage;
