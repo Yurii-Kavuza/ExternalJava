@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class DroidsSerialization
 {
-    private static final String pathToBinaryFile = "SerializedDroids.bin";
-    private static final String pathToCsvFile = "SerializedDroids.csv";
+    private static final String pathToBinaryFile = "additionalData/SerializedDroids.bin";
+    private static final String pathToCsvFile = "additionalData/SerializedDroids.csv";
 
     public static void writeDroidsToBinaryFile(ArrayList<Droid> warriors)
     {

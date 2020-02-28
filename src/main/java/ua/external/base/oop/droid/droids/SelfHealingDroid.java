@@ -9,6 +9,7 @@ public class SelfHealingDroid extends Droid implements Repairable {
 
     public SelfHealingDroid(int health, int energy, int damage, String name, double recoveryRatio) {
         this.recoveryRatio = recoveryRatio;
+        health *= recoveryRatio;
         damageBehavior = new DamageWithoutWeapon();
         energyBehavior = new EnergyUsual();
         setEssentialParameters(health,energy,damage,name);

@@ -1,0 +1,8 @@
+HouseworkerDroid name is Bob, health=40, energy=0, damage=0, responsibility is undefined
+AthleteDroid name is Chuck, health=35, energy=30, damage=35, multiplyPower = 1.0
+DoctorDroid name is Ben, health=40, energy=35, damage=25, criticalLevelOfHealth = 10
+DoublePowerDroid name is Tobias, health=25, energy=45, damage=30, multiplyPower = 2.0
+FlightDroid name is John, health=30, energy=35, damage=35
+KillerDroid name is Peter, health=30, energy=30, damage=40, extraDamage = 0
+KillerDroid name is Peter, health=30, energy=30, damage=40, extraDamage = 0
+SelfHealingDroid name is Mat, health=40, energy=35, damage=25, recoveryRatio = 1.0

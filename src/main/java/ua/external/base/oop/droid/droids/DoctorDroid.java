@@ -29,7 +29,7 @@ public class DoctorDroid extends Droid implements Repairable {
 
 	public void treatPatient(Droid patient)
 	{
-		setHealth(patient.getHealth() * 2);
+		patient.setHealth(patient.getHealth() * 2);
 	}
 
 	public int getCriticalLevelOfHealth()

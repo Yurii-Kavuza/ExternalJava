@@ -11,6 +11,7 @@ public abstract class Droid implements Serializable {
     private int MAX_VALUE = 100;
     private String name;
     private int health;
+
     DamageBehavior damageBehavior;
     EnergyBehavior energyBehavior;
 
@@ -39,13 +40,13 @@ public abstract class Droid implements Serializable {
                     resourceManager.getString(Keys.SUM_COMPONENTS_KEY) + MAX_VALUE + Keys.POINT +
                     Keys.SPACE + resourceManager.getString(Keys.BROKEN_KEY));
         } else if (energy < 1 && damage < 1) {
-            setEssentialParameters(health, energy, damage, name);
+            setEssentialParameters(health, 0, 0, name);
             System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_FIGHT_PROTECT_KEY));
         } else if (energy < 1) {
-            setEssentialParameters(health, energy, damage, name);
+            setEssentialParameters(health, 0, damage, name);
             System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_PROTECT_KEY));
         } else if (damage < 1) {
-            setEssentialParameters(health, energy, damage, name);
+            setEssentialParameters(health, energy, 0, name);
             System.out.println(resourceManager.getString(Keys.PAY_ATTENTION_KEY) + Keys.SPACE + resourceManager.getString(Keys.NO_FIGHT_KEY));
         } else {
             setEssentialParameters(health, energy, damage, name);

@@ -12,6 +12,11 @@ public class FlightDroid extends Droid
 		setEssentialParameters(health,energy,damage,name);
 	}
 
+	public FlightDroid(Droid flightDroid)
+	{
+		super(flightDroid);
+	}
+
 	public void fly()
 	{
 		System.out.println("I am flying!");

@@ -51,14 +51,6 @@ public class DroidsWar {
         warriors.add(sixth);
         warriors.add(seventh);
 
-        /*DroidsSerialization.writeDroidsToBinaryFile(warriors);
-        DroidsSerialization.writeDroidsToTextFile(warriors);
-        System.out.println("\n\n");
-        DroidsDeserialization.readDroidsFromBinaryFile();
-        System.out.println("\n\n");
-        DroidsDeserialization.readDroidsFromTextFile();
-        System.out.println("\n\n");*/
-
         DroidController controller = new DroidController(warriors,view);
 
         controller.startGame();

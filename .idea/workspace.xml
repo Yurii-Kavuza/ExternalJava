@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5decf1b3-ecec-45a8-b156-e2600bf5e1b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ExternalJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ExternalJava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/controllers/DroidController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/resource/Keys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/session/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/additionalData/usualUsers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/additionalData/usualUsers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property/messages_en_EN.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property/messages_ua_UA.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializedDroids.bin" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/additionalData/SerializedDroids.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializedDroids.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/additionalData/SerializedDroids.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoctorDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoctorDroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoublePowerDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/DoublePowerDroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/Droid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/FlightDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/FlightDroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/KillerDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/KillerDroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/SelfHealingDroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/droids/SelfHealingDroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsDeserialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/serialization/DroidsSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Droids.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ExternalJava.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/DroidsWar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/DroidsWar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoctorDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/DoublePowerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/Droid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/FlightDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/KillerDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/SelfHealingDroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/droids/SelfHealingDroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsDeserialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsDeserialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/external/base/oop/droid/serialization/DroidsSerialization.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +48,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Y5FtDojhfL8uyVsSUdnrfuX12H" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,8 +64,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -51,11 +78,13 @@
       <recent name="ua.external.base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\koopk\OneDrive\Desktop\mavenUnitTestsDroids\src\main\resources\additionalData" />
+      <recent name="C:\Users\koopk\OneDrive\Desktop\mavenUnitTestsDroids\src\main\resources" />
       <recent name="G:\Yura\Prog\Java\repos\ExternalJava\src\main\resources" />
       <recent name="G:\Yura\Prog\Java\repos\ExternalJava" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DroidsWar">
     <configuration name="DroidsWar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ua.external.base.oop.droid.DroidsWar" />
       <module name="ExternalJava" />
@@ -69,9 +98,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DroidTest.droidEssentialConstructorEnergyAndDamageLessThan1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExternalJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.external.base.oop.junittests.droidstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.external.base.oop.junittests.droidstests" />
+      <option name="MAIN_CLASS_NAME" value="ua.external.base.oop.junittests.droidstests.DroidTest" />
+      <option name="METHOD_NAME" value="droidEssentialConstructorEnergyAndDamageLessThan1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DroidTest.droidEssentialConstructorEnergyLessThan1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExternalJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.external.base.oop.junittests.droidstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.external.base.oop.junittests.droidstests" />
+      <option name="MAIN_CLASS_NAME" value="ua.external.base.oop.junittests.droidstests.DroidTest" />
+      <option name="METHOD_NAME" value="droidEssentialConstructorEnergyLessThan1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DroidTest.droidEssentialConstructorParamsSumMoreThanMaxValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExternalJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.external.base.oop.junittests.droidstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.external.base.oop.junittests.droidstests" />
+      <option name="MAIN_CLASS_NAME" value="ua.external.base.oop.junittests.droidstests.DroidTest" />
+      <option name="METHOD_NAME" value="droidEssentialConstructorParamsSumMoreThanMaxValueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HouseworkerDroidTest.HouseworkerDroidConstructorWithResponsibilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExternalJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.external.base.oop.junittests.droidstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.external.base.oop.junittests.droidstests" />
+      <option name="MAIN_CLASS_NAME" value="ua.external.base.oop.junittests.droidstests.HouseworkerDroidTest" />
+      <option name="METHOD_NAME" value="HouseworkerDroidConstructorWithResponsibilityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DroidsWar" />
+        <item itemvalue="JUnit.DroidTest.droidEssentialConstructorParamsSumMoreThanMaxValueTest" />
+        <item itemvalue="JUnit.DroidTest.droidEssentialConstructorEnergyLessThan1" />
+        <item itemvalue="JUnit.HouseworkerDroidTest.HouseworkerDroidConstructorWithResponsibilityTest" />
+        <item itemvalue="JUnit.DroidTest.droidEssentialConstructorEnergyAndDamageLessThan1" />
       </list>
     </recent_temporary>
   </component>
@@ -85,19 +182,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582224760733</updated>
+      <workItem from="1582809903735" duration="12904000" />
+      <workItem from="1582827553975" duration="17344000" />
+      <workItem from="1582888917631" duration="6084000" />
+      <workItem from="1582898005261" duration="1766000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Project_Structure" timestamp="1582373651948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Project_Structure/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373651948" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1582499286646">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="100" y="100" width="1336" height="624" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582814872792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="100" y="100" width="1336" height="624" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1582814872792" />
+    <state x="549" y="89" key="#com.intellij.ide.util.MemberChooser" timestamp="1582848969277">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582499286646" />
     <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582476257991" />
+    <state x="549" y="89" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582848969277" />
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582373895546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -122,42 +231,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="357" y="72" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373632933" />
-    <state width="1636" height="282" key="GridCell.Tab.0.bottom" timestamp="1582546166779">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.0.bottom" timestamp="1582897903741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="233" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582538611241" />
     <state width="1636" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166779" />
-    <state width="1636" height="282" key="GridCell.Tab.0.center" timestamp="1582546166779">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582897903741" />
+    <state width="1478" height="176" key="GridCell.Tab.0.center" timestamp="1582897903740">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="233" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582538611241" />
     <state width="1636" height="282" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166779" />
-    <state width="1636" height="282" key="GridCell.Tab.0.left" timestamp="1582546166778">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582897903740" />
+    <state width="1478" height="176" key="GridCell.Tab.0.left" timestamp="1582897903740">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="233" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582538611241" />
     <state width="1636" height="282" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166778" />
-    <state width="1636" height="282" key="GridCell.Tab.0.right" timestamp="1582546166779">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582897903740" />
+    <state width="1478" height="176" key="GridCell.Tab.0.right" timestamp="1582897903741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="233" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582538611241" />
     <state width="1636" height="282" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582546166779" />
-    <state width="1636" height="346" key="GridCell.Tab.1.bottom" timestamp="1582545667180">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582897903741" />
+    <state width="1478" height="176" key="GridCell.Tab.1.bottom" timestamp="1582897903741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1636" height="346" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582545667180" />
-    <state width="1636" height="346" key="GridCell.Tab.1.center" timestamp="1582545667180">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582897903741" />
+    <state width="1478" height="176" key="GridCell.Tab.1.center" timestamp="1582897903741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1636" height="346" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582545667180" />
-    <state width="1636" height="346" key="GridCell.Tab.1.left" timestamp="1582545667179">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582897903741" />
+    <state width="1478" height="176" key="GridCell.Tab.1.left" timestamp="1582897903741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1636" height="346" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582545667179" />
-    <state width="1636" height="346" key="GridCell.Tab.1.right" timestamp="1582545667180">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1478" height="176" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582897903741" />
+    <state width="1478" height="176" key="GridCell.Tab.1.right" timestamp="1582897903741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1636" height="346" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582545667180" />
+    <state width="1478" height="176" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582897903741" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1582225029721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -166,11 +283,12 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="498" y="141" key="chooseDestDirectoryDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582373911416" />
-    <state x="1831" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582554888584">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state x="425" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1582898010951">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582533563026" />
     <state x="1831" y="268" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582554888584" />
+    <state x="425" y="210" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582898010951" />
     <state x="0" y="0" width="1183" height="755" maximized="true" key="dock-window-1" timestamp="1582545341601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -192,14 +310,63 @@
     </state>
     <state x="403" y="164" key="run.anything.popup/0.0.1366.728/1366.0.1680.1050@0.0.1366.728" timestamp="1582535964555" />
     <state x="1862" y="237" key="run.anything.popup/0.0.1366.728/1366.0.1680.1050@1366.0.1680.1050" timestamp="1582479934757" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582837736088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582837736088" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/junittests/droidstests/DroidTest.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/droid/DroidsWar.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="1" />
+          <line>55</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/junittests/droidstests/DoublePowerDroidTest.java</url>
+          <line>9</line>
+          <properties class="ua.external.base.oop.junittests.droidstests.DoublePowerDroidTest" method="DoublePowerDroidConstructorTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/junittests/droidstests/HouseworkerDroidTest.java</url>
+          <line>9</line>
+          <properties class="ua.external.base.oop.junittests.droidstests.HouseworkerDroidTest" method="HouseworkerDroidConstructorWithResponsibilityTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/junittests/droidstests/KillerDroidTest.java</url>
+          <line>31</line>
+          <properties class="ua.external.base.oop.junittests.droidstests.KillerDroidTest" method="killEnemyTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/junittests/droidstests/DroidTest.java</url>
+          <line>12</line>
+          <properties class="ua.external.base.oop.junittests.droidstests.DroidTest" method="droidEssentialConstructor">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/external/base/oop/junittests/droidstests/DroidTest.java</url>
+          <line>31</line>
+          <properties class="ua.external.base.oop.junittests.droidstests.DroidTest" method="droidEssentialConstructorParamsSumMoreThanMaxValueTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
